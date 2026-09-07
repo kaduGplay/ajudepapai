@@ -10,6 +10,7 @@ function requireEnv(name: string): string {
 
 export const config = {
   voidpay: {
+    callbackUrl: process.env.VOIDPAY_CALLBACK_URL,
     publicKey: requireEnv("VOIDPAY_PUBLIC_KEY"),
     secretKey: requireEnv("VOIDPAY_SECRET_KEY"),
     apiUrl: process.env.VOIDPAY_API_URL ?? "https://dash.voidpayments.com/api/v1",

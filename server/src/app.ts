@@ -4,6 +4,7 @@ import { timingSafeEqual } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { newOrder, saveOrder, findOrder, findCallback, syncOrder, reconcileOrders } from "./orders.js";
+import { callbackUrl, isSharedCallback, notificationOrder } from "./webhook.js";
 import { config } from "./config.js";
 import { createPixTransaction, getTransaction, VoidPayApiError } from "./voidpay.js";
 
@@ -33,9 +34,16 @@ app.get('/api/cron/reconcile', asyncRoute(async (req, res) => {
   return res.json(totals);
 }));
 app.post('/api/webhooks/voidpay/:id/:token', asyncRoute(async (req, res) => {
-  const order = await findCallback(req.params.id, req.params.token);
-  if (!order) return res.sendStatus(404);
-  // Never trust the callback's reported status: confirm through the authenticated gateway API.
+  const shared = isSharedCallback(req.params.id, req.params.token);
+  const legacyOrder = shared ? undefined : await findCallback(req.params.id, req.params.token);
+  if (!shared && !legacyOrder) return res.sendStatus(404);
+  // The URL authenticates the notification; its body only identifies the order.
+  // Payment status is always fetched through the authenticated gateway API.
+  const order = await notificationOrder(req.body) ?? (shared ? undefined : legacyOrder);
+  if (!order) {
+    console.warn('Webhook sem pedido reconhecido; será necessário repetir a notificação');
+    return res.sendStatus(503);
+  }
   const ok = await syncOrder(order);
   return res.sendStatus(ok ? 200 : 503);
 }));
@@ -60,10 +68,12 @@ app.post("/api/gerar-pix", async (req, res) => {
   const email = 'doacao@campanhasolidaria.fun';
 
   try {
+    const fixedCallback = callbackUrl();
     const order = await newOrder(amountEmCentavos, { name: nome, email, phone: null, document: null, country: 'BR' }, body.trackingParameters);
     const result = await createPixTransaction({
       identifier: order.id,
-      callbackUrl: `${config.siteUrl}/api/webhooks/voidpay/${order.id}/${order.callbackToken}`,
+      callbackUrl: fixedCallback,
+      metadata: { orderId: order.id },
       amount: amountEmReais,
       client: { name: nome, email, phone: '00000000000', document: config.donorDocument },
       products: [{ id: 'RubzhOGiaWpd', name: 'Doação Campanha Heloisa', quantity: 1, price: amountEmReais }],

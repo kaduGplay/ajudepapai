@@ -33,6 +33,7 @@ Em Settings → Environment Variables, configure:
 | `SITE_URL` | `https://campanhasolidaria.fun` |
 | `UPSTASH_REDIS_REST_URL` | URL REST fornecida pelo Upstash |
 | `UPSTASH_REDIS_REST_TOKEN` | Token REST de leitura e escrita fornecido pelo Upstash |
+| `VOIDPAY_CALLBACK_URL` | URL fixa existente no gateway, armazenada em `server/.env` |
 | `PIX_DEFAULT_DOCUMENT` | Documento fixo autorizado, existente em `server/.env` |
 | `CRON_SECRET` | Segredo aleatório de pelo menos 32 caracteres |
 
@@ -42,11 +43,11 @@ Não prefixe as chaves com `NEXT_PUBLIC_`, não as coloque no HTML e não config
 
 Adicione `campanhasolidaria.fun` em Settings → Domains e copie exatamente os registros DNS indicados pela Vercel para seu provedor. Aguarde a validação do domínio e HTTPS. Se adicionar `www`, configure o redirecionamento para o domínio principal.
 
-Cada PIX é criado com um callback individual em:
+Todos os novos PIX reutilizam a mesma URL configurada em `VOIDPAY_CALLBACK_URL`:
 
 `https://campanhasolidaria.fun/api/webhooks/voidpay/<pedido>/<token>`
 
-A aplicação gera os dois identificadores automaticamente. Não substitua a URL no gateway por uma URL fixa. O gateway precisa conseguir acessar o domínio de produção sem uma tela de login/Deployment Protection. Confirme nos logs do gateway a entrega real do callback.
+A URL fixa reutiliza um endereço anteriormente cadastrado e evita consumir uma nova vaga de webhook por cobrança. Os identificadores da URL são persistentes; não os altere a cada transação. O corpo da notificação identifica o pedido por ID da transação ou metadados. URLs antigas continuam aceitas para cobranças anteriores. O gateway precisa conseguir acessar o domínio de produção sem uma tela de login/Deployment Protection. Confirme nos logs do gateway a entrega real do callback.
 
 O webhook consulta a API autenticada da VoidPay; ignora o status alegado no corpo da notificação. Só envia `paid` à Utmify após confirmação da VoidPay. Em falha ou concorrência responde 503 para permitir nova tentativa. O pedido já salvo também fica na fila persistente do Redis.
 
