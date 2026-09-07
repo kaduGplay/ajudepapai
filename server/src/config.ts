@@ -14,6 +14,7 @@ export const config = {
     secretKey: requireEnv("VOIDPAY_SECRET_KEY"),
     apiUrl: process.env.VOIDPAY_API_URL ?? "https://dash.voidpayments.com/api/v1",
   },
+  donorDocument: process.env.PIX_DEFAULT_DOCUMENT,
   utmifyToken: requireEnv("UTMIFY_API_TOKEN"),
   siteUrl: process.env.SITE_URL ?? "https://campanhasolidaria.fun",
   redisUrl: process.env.UPSTASH_REDIS_REST_URL ?? process.env.KV_REST_API_URL,

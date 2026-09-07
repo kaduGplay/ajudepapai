@@ -65,7 +65,7 @@ app.post("/api/gerar-pix", async (req, res) => {
       identifier: order.id,
       callbackUrl: `${config.siteUrl}/api/webhooks/voidpay/${order.id}/${order.callbackToken}`,
       amount: amountEmReais,
-      client: { name: nome, email },
+      client: { name: nome, email, phone: '00000000000', document: config.donorDocument },
       products: [{ id: 'RubzhOGiaWpd', name: 'Doação Campanha Heloisa', quantity: 1, price: amountEmReais }],
     });
 

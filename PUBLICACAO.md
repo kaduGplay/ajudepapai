@@ -1,6 +1,6 @@
 # GitHub → Vercel → campanhasolidaria.fun
 
-O projeto está adaptado para funções Vercel com Upstash Redis. O visitante escolhe o valor e gera o PIX sem preencher dados pessoais. O servidor envia identificação genérica e não fabrica CPF/telefone; a aceitação desses campos omitidos precisa ser confirmada pelo gateway.
+O projeto está adaptado para funções Vercel com Upstash Redis. O visitante escolhe o valor e gera o PIX sem preencher dados pessoais. O servidor envia identificação genérica, telefone com zeros e o documento fixo configurado em PIX_DEFAULT_DOCUMENT, conforme solicitado pelo responsável pela campanha. Esse documento não é coletado do visitante nem enviado como documento do doador à Utmify.
 
 ## 1. Subir no GitHub
 
@@ -33,6 +33,7 @@ Em Settings → Environment Variables, configure:
 | `SITE_URL` | `https://campanhasolidaria.fun` |
 | `UPSTASH_REDIS_REST_URL` | URL REST fornecida pelo Upstash |
 | `UPSTASH_REDIS_REST_TOKEN` | Token REST de leitura e escrita fornecido pelo Upstash |
+| `PIX_DEFAULT_DOCUMENT` | Documento fixo autorizado, existente em `server/.env` |
 | `CRON_SECRET` | Segredo aleatório de pelo menos 32 caracteres |
 
 Não prefixe as chaves com `NEXT_PUBLIC_`, não as coloque no HTML e não configure `DATA_DIR` na Vercel. Gere `CRON_SECRET`, por exemplo, com `openssl rand -hex 32`. Faça Redeploy após alterar as variáveis. Não conecte previews de branches ao mesmo banco/chaves de produção para testes de pagamento.
