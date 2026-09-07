@@ -1,0 +1,5 @@
+import 'dotenv/config';
+const payload = {orderId:`integration-validation-${Date.now()}`,platform:'CampanhaSolidaria',paymentMethod:'pix',status:'waiting_payment',createdAt:new Date().toISOString().slice(0,19).replace('T',' '),approvedDate:null,refundedAt:null,customer:{name:'Teste de integração',email:'teste@example.com',phone:null,document:null,country:'BR'},products:[{id:'RubzhOGiaWpd',name:'Teste de integração',planId:null,planName:null,quantity:1,priceInCents:3000}],trackingParameters:{src:null,sck:null,utm_source:null,utm_campaign:null,utm_medium:null,utm_content:null,utm_term:null},commission:{totalPriceInCents:3000,gatewayFeeInCents:0,userCommissionInCents:3000,currency:'BRL'},isTest:true};
+const response=await fetch('https://api.utmify.com.br/api-credentials/orders',{method:'POST',headers:{'content-type':'application/json','x-api-token':process.env.UTMIFY_API_TOKEN},body:JSON.stringify(payload),signal:AbortSignal.timeout(15000)});
+console.log('Validação Utmify isTest=true: HTTP',response.status,await response.text());
+if(!response.ok)process.exitCode=1;

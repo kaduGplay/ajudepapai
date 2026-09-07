@@ -1,0 +1,31 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    env_file: server/.env
+    environment:
+      NODE_ENV: production
+      DATA_DIR: /app/server/data
+      SITE_URL: https://campanhasolidaria.fun
+      PORT: 3000
+    volumes:
+      - orders:/app/server/data
+    expose:
+      - "3000"
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - app
+volumes:
+  orders:
+  caddy_data:
+  caddy_config:

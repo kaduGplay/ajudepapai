@@ -1,0 +1,50 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtempSync, readdirSync, readFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import { spawnSync } from 'node:child_process';
+process.env.VOIDPAY_PUBLIC_KEY = 'test';
+process.env.VOIDPAY_SECRET_KEY = 'test';
+process.env.UTMIFY_API_TOKEN = 'test';
+process.env.DATA_DIR = mkdtempSync(path.join(tmpdir(), 'utmify-orders-'));
+const { newOrder, saveOrder, syncOrder, payload, findCallback } = await import('../dist/orders.js');
+let transactionStatus = 'PENDING';
+let failUtmify = false;
+const requests = [];
+global.fetch = async (url, options) => {
+  if (url.includes('api-credentials/orders')) {
+    requests.push(JSON.parse(options.body));
+    return { ok: !failUtmify, status: failUtmify ? 503 : 200, json: async () => ({ success: !failUtmify }) };
+  }
+  return { ok: true, json: async () => ({ status: transactionStatus, payedAt: transactionStatus === 'COMPLETED' ? '2026-09-07T16:00:00Z' : null, refundedAt: transactionStatus === 'REFUNDED' ? '2026-09-07T17:00:00Z' : null }) };
+};
+test('pending → paid → refunded, persistent retries, UTC, attribution and deduplication', async () => {
+  const order = newOrder(5000, { name: 'Teste', email: 'teste@example.com', phone: null, document: null, country: 'BR' }, { utm_source: 'FB', src: 'ad', sck: 'click', utm_campaign: 'camp|123' });
+  const createdAt = order.createdAt;
+  order.transactionId = 'test-transaction';saveOrder(order);
+  assert.equal(findCallback(order.id, 'bad-token'), undefined);
+  assert.equal(findCallback(order.id, order.callbackToken), order);
+  await syncOrder(order, false);
+  assert.equal(requests[0].status, 'waiting_payment');
+  assert.equal(requests[0].approvedDate, null);
+  assert.equal(requests[0].commission.totalPriceInCents, 5000);
+  assert.equal(requests[0].trackingParameters.utm_campaign, 'camp|123');
+  await syncOrder(order);assert.equal(requests.length, 1);
+  transactionStatus = 'COMPLETED';failUtmify = true;
+  await syncOrder(order);assert.equal(order.status, 'paid');assert.equal(order.sentStatus, 'waiting_payment');
+  const saved = JSON.parse(readFileSync(path.join(process.env.DATA_DIR, readdirSync(process.env.DATA_DIR)[0]), 'utf8'));
+  assert.equal(saved.status, 'paid');assert.equal(saved.sentStatus, 'waiting_payment');
+  failUtmify = false;
+  await Promise.all([syncOrder(order), syncOrder(order)]);
+  assert.equal(order.sentStatus, 'paid');assert.equal(requests.length, 3);
+  assert.equal(payload(order).approvedDate, '2026-09-07 16:00:00');
+  assert.equal(order.createdAt, createdAt);
+  assert.equal(requests[0].createdAt, requests[2].createdAt);
+  transactionStatus = 'PENDING';await syncOrder(order);assert.equal(order.status, 'paid');assert.equal(requests.length, 3);
+  transactionStatus = 'REFUNDED';await syncOrder(order);assert.equal(order.status, 'refunded');
+  assert.equal(requests.at(-1).refundedAt, '2026-09-07 17:00:00');
+  transactionStatus = 'COMPLETED';await syncOrder(order);assert.equal(order.status, 'refunded');
+  const restarted = spawnSync(process.execPath, ['--input-type=module', '-e', `const {findOrder}=await import('./dist/orders.js');if(findOrder('test-transaction')?.sentStatus!=='refunded')process.exit(1)`], {cwd: process.cwd(), env:process.env, encoding:'utf8'});
+  assert.equal(restarted.status, 0, restarted.stderr);
+});

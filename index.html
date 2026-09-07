@@ -1,0 +1,2813 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
+
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1509232324297951');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1509232324297951&ev=PageView&noscript=1"
+/></noscript>
+    <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+        <script id="_wauhnw">
+        var _wau = _wau || [];
+        _wau.push(["small", "3px9r1fr5p", "hnw"]);
+    </script>
+    <script async="" src="js/s.js"></script>
+    <title>Ajude Heloisa a buscar uma nova possibilidade de tratamento contra o câncer</title>
+    <meta name="description" content="Heloisa tem apenas 1 ano e 8 meses e enfrenta uma batalha contra o câncer. Depois de passar por cirurgias e diferentes protocolos convencionais, sua família busca uma nova possibilidade de tratamento em São Paulo. Para isso, precisa arrecadar R$ 200 mil.">
+    <meta name="keywords" content="">
+    <meta name="author" content="Campanha para Heloisa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+    <meta name="msapplication-navbutton-color" content="#FFFFFF">
+
+    <meta property="og:title" content="Ajude Heloisa a buscar uma nova possibilidade de tratamento contra o câncer">
+    <meta property="og:description" content="Heloisa tem apenas 1 ano e 8 meses e enfrenta uma batalha contra o câncer. Depois de passar por cirurgias e diferentes protocolos convencionais, sua família busca uma nova possibilidade de tratamento em São Paulo. Para isso, precisa arrecadar R$ 200 mil.">
+    <meta property="og:url" content="https://campanhasolidaria.fun">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://campanhasolidaria.fun/images/heloisa.jpeg">
+
+    <link rel="shortcut icon" href="https://www.vakinha.com.br/images/favicon.ico">
+    <link rel="icon" href="https://www.vakinha.com.br/images/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="https://www.vakinha.com.br/images/favicon.ico">
+    <meta name="msapplication-TileImage" content="https://www.vakinha.com.br/images/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+
+    <style>
+        .btn-primary {
+            background-color: #AB3165;
+            color: #fff;
+            font-weight: 600;
+            padding: .75rem;
+            border-radius: .5rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .btn-primary:hover {
+            opacity: .9;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: #fff;
+            max-width: 420px;
+            width: 90%;
+            padding: 1.5rem;
+            border-radius: .5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+            position: relative;
+            overflow-y: auto;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: .5rem;
+            right: .5rem;
+            font-size: 1.2rem;
+            color: #6b7280;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        
+        .close-modal:hover {
+            color: #1f2937;
+        }
+        
+        .donation-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: .75rem;
+            margin-top: 1rem;
+        }
+        
+        .donation-option {
+            position: relative;
+        }
+        
+        .donation-link {
+            display: inline-block;
+            text-align: center;
+            padding: .75rem;
+            border: 2px solid #24CA68;
+            border-radius: .5rem;
+            color: #24CA68;
+            font-weight: 600;
+            background: none;
+            cursor: pointer;
+            min-height: 56px;
+            width: 100%;
+            font-size: 1rem;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        
+        .donation-link:hover {
+            background-color: #24CA68;
+            ;
+            color: #fff;
+        }
+        
+        .highlight {
+            border-color: #24CA68;
+            background-color: #24CA68;
+            color: #fff;
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -1.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #24CA68;
+            color: #fff;
+            font-size: .7rem;
+            font-weight: 700;
+            padding: .15rem .35rem;
+            border-radius: .25rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+        }
+        
+        .popular-badge svg {
+            width: 12px;
+            height: 12px;
+            fill: #fff;
+        }
+        
+        .col-span-2 {
+            grid-column: span 2 / span 2;
+        }
+        
+        .donation-card {
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+            border-radius: .5rem;
+            padding: .75rem;
+            margin-bottom: .75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+    <style>
+        
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @font-face {
+            font-family: Lato;
+            font-style: italic;
+            font-weight: 300;
+            font-display: swap;
+            src: url(fonts/2f9f484c332ee5de-s.woff2) format("woff2");
+            unicode-range: u+0100-02ba, u+02bd-02c5, u+02c7-02cc, u+02ce-02d7, u+02dd-02ff, u+0304, u+0308, u+0329, u+1d00-1dbf, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: italic;
+            font-weight: 300;
+            font-display: swap;
+            src: url(fonts/b5215411e8ce7768-s.p.woff2) format("woff2");
+            unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(fonts/1c6f4cbc58bf1b54-s.woff2) format("woff2");
+            unicode-range: u+0100-02ba, u+02bd-02c5, u+02c7-02cc, u+02ce-02d7, u+02dd-02ff, u+0304, u+0308, u+0329, u+1d00-1dbf, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(fonts/756f9c755543fe29-s.p.woff2) format("woff2");
+            unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url(fonts/18663a228a3c9261-s.woff2) format("woff2");
+            unicode-range: u+0100-02ba, u+02bd-02c5, u+02c7-02cc, u+02ce-02d7, u+02dd-02ff, u+0304, u+0308, u+0329, u+1d00-1dbf, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url(fonts/25460892714ab800-s.p.woff2) format("woff2");
+            unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: italic;
+            font-weight: 900;
+            font-display: swap;
+            src: url(fonts/b15a336eec276995-s.woff2) format("woff2");
+            unicode-range: u+0100-02ba, u+02bd-02c5, u+02c7-02cc, u+02ce-02d7, u+02dd-02ff, u+0304, u+0308, u+0329, u+1d00-1dbf, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: italic;
+            font-weight: 900;
+            font-display: swap;
+            src: url(fonts/9364c9a9ce248cb1-s.p.woff2) format("woff2");
+            unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(fonts/6ec89c3f4265bc9b-s.woff2) format("woff2");
+            unicode-range: u+0100-02ba, u+02bd-02c5, u+02c7-02cc, u+02ce-02d7, u+02dd-02ff, u+0304, u+0308, u+0329, u+1d00-1dbf, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(fonts/155cae559bbd1a77-s.p.woff2) format("woff2");
+            unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(fonts/f1df658da56627d0-s.woff2) format("woff2");
+            unicode-range: u+0100-02ba, u+02bd-02c5, u+02c7-02cc, u+02ce-02d7, u+02dd-02ff, u+0304, u+0308, u+0329, u+1d00-1dbf, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(fonts/4de1fea1a954a5b6-s.p.woff2) format("woff2");
+            unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(fonts/162938472036e0a8-s.woff2) format("woff2");
+            unicode-range: u+0100-02ba, u+02bd-02c5, u+02c7-02cc, u+02ce-02d7, u+02dd-02ff, u+0304, u+0308, u+0329, u+1d00-1dbf, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(fonts/6d664cce900333ee-s.p.woff2) format("woff2");
+            unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(fonts/af4d27004aa34222-s.woff2) format("woff2");
+            unicode-range: u+0100-02ba, u+02bd-02c5, u+02c7-02cc, u+02ce-02d7, u+02dd-02ff, u+0304, u+0308, u+0329, u+1d00-1dbf, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff
+        }
+        
+        @font-face {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(fonts/7ff6869a1704182a-s.p.woff2) format("woff2");
+            unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+        }
+        
+         :root {
+            --cor-primaria: rgb(36, 202, 104);
+            --cor-secundaria: rgb(0, 157, 78);
+            --bg_primario: rgb(255, 255, 255);
+            --bg_secundario: rgb(249, 249, 249);
+            --cor_texto: rgb(40, 40, 40);
+            --cor_texto_gray: rgb(138, 138, 138);
+        }
+        
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            font-family: "Lato", sans-serif;
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            background: var(--bg_secundario);
+            color: var(--cor_texto);
+        }
+        
+        a {
+            text-decoration: none !important;
+            transition: all 0.3s linear;
+        }
+        
+        ul {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        ul li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+            outline: 0;
+        }
+        
+        button,
+        input,
+        a,
+        select,
+        textarea {
+            outline: 0 !important;
+            border: 0;
+            text-decoration: none;
+            transition: all 0.2s linear;
+        }
+        
+        .container {
+            max-width: 1140px !important;
+            width: 100% !important;
+            position: relative;
+            z-index: 3;
+            padding: 0 15px;
+        }
+        
+        header {
+            border-bottom: 2px solid rgb(241, 240, 240);
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            z-index: 99;
+        }
+        
+        header .content-header {
+            height: 90px;
+        }
+        
+        .menu-header {
+            width: calc(100% - 170px);
+            padding: 0px 0px 0px 56px;
+        }
+        
+        .menu-header .item-menu {
+            position: relative;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            color: var(--cor_texto);
+            white-space: nowrap;
+            text-decoration: none;
+            text-transform: none;
+            font-family: "Montserrat", serif;
+            cursor: pointer;
+            transition: all .2s linear;
+        }
+        
+        .menu-header .item-menu svg {
+            fill: var(--cor_texto);
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+        }
+        
+        .menu-header .item-menu:hover {
+            opacity: 0.8;
+        }
+        
+        .menu-header .item-menu:nth-child(1) {
+            padding: 0px 16px 0px 0px;
+        }
+        
+        .menu-header .item-menu:nth-child(2) {
+            padding: 0px 16px;
+        }
+        
+        .menu-header .item-menu:nth-child(3) {
+            padding: 0px 0px 0px 16px;
+        }
+        
+        .menu-header .logArea {
+            width: 100%;
+        }
+        
+        .menu-header .item-menu-busca {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .menu-header .item-menu-busca span {
+            font-size: 14px;
+            line-height: 21px;
+            font-family: "Montserrat", serif;
+            color: var(--cor-primaria);
+            font-weight: 700;
+            transition: all .2s linear;
+        }
+        
+        .menu-header .item-menu-busca svg {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            fill: var(--cor-primaria);
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            transition: all .2s linear;
+            padding-left: 3px;
+        }
+        
+        .menu-header .item-menu-account {
+            padding: 0px 16px 0px 32px;
+            font-size: 14px;
+            line-height: 21px;
+            font-family: "Montserrat", serif;
+            color: var(--cor-primaria);
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .2s linear;
+        }
+        
+        .menu-header .item-menu-account:hover,
+        .menu-header .item-menu-busca:hover span {
+            color: var(--cor-secundaria);
+        }
+        
+        .menu-header .item-menu-busca:hover svg {
+            fill: var(--cor-secundaria);
+        }
+        
+        button.btn-create-button {
+            -moz-box-align: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 8px;
+            display: flex;
+            -moz-box-pack: center;
+            justify-content: center;
+            border: 1px solid transparent;
+            background-color: var(--cor-primaria);
+            padding: 8px 12px;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            font-family: "Montserrat", serif;
+            transition: all .2s linear;
+        }
+        
+        button.btn-create-button:hover {
+            background-color: var(--cor-secundaria);
+        }
+        
+        section#corpo {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .topVakinha {
+            margin: 10px 0px 20px;
+        }
+        
+        .topVakinha span {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: rgb(64, 64, 64);
+            display: flex;
+            justify-content: center;
+        }
+        
+        .topVakinha h1 {
+            margin: 5px auto 7px;
+            color: rgb(64, 64, 64);
+            font-weight: 700;
+            font-size: 48px;
+            text-align: center;
+        }
+        
+        .topVakinha h1+span {
+            color: rgb(40, 40, 40);
+            font-size: 18px;
+            line-height: 27px;
+        }
+        
+        .detailsVakinha {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        
+        .detailsVakinha .detalhes {
+            flex: 0 0 66.6667%;
+            max-width: 66.6667%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        .detailsVakinha .detalhes .detalhes-view {
+            padding: 15px;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+        }
+        
+        .galeria {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .jeWFMw {
+            display: flex;
+            width: unset;
+            padding: 26px 0 20px;
+        }
+        
+        .haSOVG {
+            display: flex;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px 7px 0px 0px;
+        }
+        
+        .gNSeDc {
+            position: relative;
+            width: 14px;
+        }
+        
+        .lgcmt {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(241, 240, 240);
+            border-radius: 50px;
+            color: rgb(255, 255, 255);
+            display: block;
+            line-height: 38px;
+            text-align: center;
+            height: 38px;
+            width: 38px;
+            max-width: 38px;
+        }
+        
+        .jLFjnt {
+            background-color: rgb(241, 240, 240);
+            border: 1px solid rgb(241, 240, 240);
+            border-radius: 50px;
+            color: rgb(64, 64, 64);
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 38px;
+            width: 38px;
+            font-size: 16px;
+            padding-bottom: 3px;
+        }
+        
+        .kaMzRM {
+            padding: 0px 0px 0px 34px;
+            display: flex;
+            width: unset;
+            -moz-box-align: center;
+            align-items: center;
+        }
+        
+        .ivmFdA {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 500;
+        }
+        
+        .iVMVsL {
+            padding: 0px 0px 1px 4px;
+        }
+        
+        .galeria-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            width: 100%;
+            z-index: 5;
+        }
+        
+        .galeria-pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+            cursor: pointer;
+            background-color: #fff;
+            opacity: 1;
+            width: 10px;
+            height: 10px;
+            margin: 4px;
+            transition: all .3s linear;
+        }
+        
+        .galeria-pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: var(--cor-primaria);
+        }
+        
+        .cbskvx {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            z-index: 5;
+            box-shadow: rgb(40, 40, 40) 1px 1px 3px;
+            border-radius: 50%;
+        }
+        
+        .cbskvx::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 20px;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 0.5s;
+            box-shadow: rgb(255, 255, 255) 0px 0px 10px 40px;
+        }
+        
+        .detailsVakinha .resumo {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo {
+            background-color: rgb(255, 255, 255);
+            padding: 0px 16px;
+            position: sticky;
+            top: 15px;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .progresso {
+            padding: 20px 0 22px;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .progresso .barra-geral {
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .barraTotal {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 15px;
+            height: 5px;
+            background: rgb(241, 240, 240);
+            display: inline-block;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .barraParcial {
+            overflow: hidden;
+            background: var(--cor-primaria);
+            height: 100%;
+            border-radius: 15px;
+            flex: 1 1 0%;
+            transition: all .2s linear;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .arrecadado span {
+            font-size: 20px;
+            font-weight: 700;
+            display: block;
+            line-height: 1;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .arrecadado h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--cor-primaria);
+            margin: 0;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .meta,
+        .detailsVakinha .resumo .sticker-resumo .apoiadores {
+            margin-top: 20px;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .meta span,
+        .detailsVakinha .resumo .sticker-resumo .apoiadores span {
+            display: block;
+            font-size: 20px;
+            color: var(--cor_texto_gray);
+            line-height: 1.1;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .acao .btn-ajudar {
+            -moz-box-align: center;
+            align-items: center;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            border-radius: 8px;
+            display: flex;
+            -moz-box-pack: center;
+            justify-content: center;
+            border: 1px solid transparent;
+            background-color: var(--cor-primaria);
+            padding: 12px 16px;
+            width: 100%;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: "Montserrat", serif;
+            transition: all .2s linear;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .acao .btn-ajudar:hover {
+            background-color: var(--cor-secundaria);
+        }
+        
+        .detailsVakinha .resumo .sticker-resumo .acao {
+            border-bottom: 1px solid rgb(218, 218, 218);
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        
+        .perfil .avatar {
+            border: 3px solid rgb(241, 240, 240);
+            margin-right: 5px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #c2c2c2;
+        }
+        
+        .perfil .avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .perfil .dadosPerfil {
+            width: calc(100% - 50px);
+        }
+        
+        .perfil .dadosPerfil h3 {
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: rgb(64, 64, 64);
+            margin: 0 0 4px;
+        }
+        
+        .perfil .dadosPerfil span.cidade {
+            font-size: 12px;
+            display: block;
+            color: rgb(40, 40, 40);
+            font-weight: 400;
+            line-height: 16px;
+        }
+        
+        .perfil .dadosPerfil span.ativo {
+            font-size: 12px;
+            display: block;
+            color: rgb(64, 64, 64);
+            font-weight: 700;
+            line-height: 16px;
+        }
+        
+        .perfil .dadosPerfil span.vakinhas {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: rgb(40, 40, 40);
+            margin: 3px 0 0;
+        }
+        
+        span.vakinhas .bullet {
+            margin: 2px 5px 0;
+            background: rgb(40, 40, 40);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+        
+        .perfil .dadosPerfil a {
+            font-size: 10px;
+            white-space: nowrap;
+            text-decoration: underline !important;
+            color: rgb(20, 146, 230);
+            display: block;
+            margin: 6px 0 25px 4px;
+        }
+        
+        .menu-detalhes {
+            margin: 25px 0 0;
+        }
+        
+        .menu-detalhes ul {
+            display: flex;
+            align-items: center;
+        }
+        
+        .menu-detalhes ul li {
+            border-bottom: 2px solid rgb(223, 223, 223);
+            padding: 8px !important;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 400;
+            color: rgb(40, 40, 40);
+            font-family: "Montserrat", serif;
+        }
+        
+        .menu-detalhes ul li:not(:last-child) {
+            margin-right: 16px;
+        }
+        
+        .menu-detalhes ul li.active {
+            border-bottom: 2px solid var(--cor-primaria);
+            font-weight: 700;
+            color: var(--cor-primaria);
+        }
+        
+        .show-sobre {
+            background-color: rgb(255, 255, 255);
+            padding: 25px 16px;
+        }
+        
+        .show-sobre span.inicio {
+            display: block;
+            font-size: 14px;
+            color: rgb(58, 58, 58);
+            margin: 0 0 15px;
+        }
+        
+        .show-sobre p {
+            color: rgb(40, 40, 40);
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+        }
+        
+        .plugin-facebook {
+            background-color: rgb(255, 255, 255);
+            padding: 20px 16px;
+            margin-top: 20px;
+        }
+        
+        .facebook-comments .content-box h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(58, 58, 58);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .facebook-comments .content-box .comentario {
+            margin-bottom: 20px;
+        }
+        
+        .facebook-comments .content-box .comentario .content-comentario {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        
+        .facebook-comments .content-box .comentario .content-comentario .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        
+        .facebook-comments .content-box .comentario .content-comentario .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .facebook-comments .content-box .comentario .text-comentario {
+            width: calc(100% - 60px);
+        }
+        
+        .facebook-comments .content-box .comentario .text-comentario h3 {
+            font-size: 16px;
+            color: #365899;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .facebook-comments .content-box .comentario .text-comentario p {
+            color: #1E1E1E;
+            font-size: 15px;
+            margin: 0 0 0;
+            line-height: 20px;
+            max-width: 96%;
+        }
+        
+        .facebook-comments .content-box .comentario .text-comentario .d-flex span {
+            font-weight: 400;
+            font-size: 14px;
+            color: #365899;
+        }
+        
+        .facebook-comments .content-box .comentario .text-comentario .d-flex span:not(:last-child) {
+            padding-right: 8px;
+            margin-right: 5px;
+            position: relative;
+        }
+        
+        .facebook-comments .content-box .comentario .text-comentario .d-flex span:not(:last-child)::after {
+            content: "";
+            width: 3px;
+            height: 3px;
+            background: #131313;
+            border-radius: 50%;
+            right: 0;
+            top: 50%;
+            transform: translatey(-50%);
+            position: absolute;
+        }
+        
+        .facebook-comments .content-box .comentario .respostas-comentarios {
+            padding-left: 30px;
+            margin: 25px 0 25px 29px;
+            border-left: 1px solid #ccc;
+        }
+        
+        .facebook-comments p.final {
+            margin: 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .notificacao {
+            background-color: #fff;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgb(13, 13, 13, .2);
+            position: fixed;
+            z-index: 99;
+            left: 25px;
+            bottom: 120px;
+            padding: 10px 34px 10px 10px;
+            transition: all .2s linear;
+            transform: translatey(20px);
+            display: flex;
+            align-items: center;
+        }
+        
+        .notificacao .avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+        
+        .notificacao .avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .notificacao .content {
+            width: calc(100% - 58px);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        
+        .notificacao .content h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--cor-primaria);
+            line-height: 21px;
+            margin: 0;
+        }
+        
+        footer {
+            background-color: rgb(40, 40, 40);
+            position: relative;
+            margin-top: 40px;
+        }
+        
+        footer .aviso {
+            position: absolute;
+            top: -30px;
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+            color: rgb(138, 138, 138);
+            left: 0;
+            width: 100%;
+        }
+        
+        footer .content-footer {
+            padding: 24px 0px;
+        }
+        
+        footer .copyright {
+            background-color: rgb(90, 90, 90);
+            display: flex;
+            width: unset;
+            -moz-box-pack: center;
+            justify-content: center;
+            padding: 8px 0px 10px;
+        }
+        
+        footer .copyright span {
+            font-size: 12px;
+            line-height: 18px;
+            color: #fff;
+            font-weight: 400;
+        }
+        
+        footer .sociais li a {
+            display: flex;
+            -moz-box-align: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        footer .sociais li a svg {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            fill: #fff;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            transition: all .2s linear;
+        }
+        
+        footer .sociais li .separador {
+            margin: 0px 8px;
+            width: 2px;
+            height: 20px;
+            border-left: 1px solid rgb(255, 255, 255);
+        }
+        
+        footer .sociais li:last-child svg {
+            width: 30px;
+            height: 30px;
+        }
+        
+        footer .content {
+            padding: 25px 0px 0px;
+        }
+        
+        footer .content .aba h4 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            color: var(--cor-secundaria);
+            text-decoration: none;
+            text-transform: none;
+            min-height: 24px;
+            display: flex;
+            margin: 0;
+        }
+        
+        footer .content .aba ul {
+            padding: 12px 0px 0px !important;
+        }
+        
+        footer .content .aba ul li:not(:last-child) {
+            padding-bottom: 8px !important;
+        }
+        
+        footer .content .aba ul li a,
+        footer .content .aba ul li span {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #FFF;
+            text-decoration: none;
+            text-transform: none;
+            transition: all .2s linear;
+            display: flex;
+        }
+        
+        footer .content .aba ul li a:hover {
+            opacity: 0.8;
+            color: #fff;
+        }
+        
+        .modal.open {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(13, 13, 13, .75);
+            position: fixed;
+        }
+        
+        .modal.open .fora-modal {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+            cursor: pointer;
+        }
+        
+        .modal.open .content-modal {
+            background-color: #fff;
+            position: relative;
+            z-index: 10;
+            border-radius: 10px;
+            padding: 25px 25px 15px;
+            max-width: 90%;
+        }
+        
+        .modal.open .content-modal .close-modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--cor-primaria);
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            transition: all .2s linear;
+            cursor: pointer;
+            position: absolute;
+            right: -10px;
+            top: -10px;
+        }
+        
+        .modal.open .content-modal .close-modal:hover {
+            background: var(--cor-secundaria);
+        }
+        
+        .modal.open .content-modal h2 {
+            font-weight: 700;
+            font-size: 20px;
+            text-align: center;
+            margin: 0 auto 15px;
+        }
+        
+        .modal.open .content-modal .valores {
+            max-width: 380px;
+        }
+        
+        .modal.open .content-modal .valores a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: var(--cor-primaria);
+            border-radius: 5px;
+            height: 40px;
+            width: 120px;
+            font-weight: 700;
+            transition: all .2s linear;
+            margin-bottom: 12px;
+        }
+        
+        .modal.open .content-modal .valores a:hover {
+            background-color: var(--cor-secundaria);
+            color: #fff;
+        }
+        
+        @media(max-width:992px) {
+            .modal.open .content-modal .valores a {
+                width: 32%;
+                font-size: 15px;
+            }
+            .modal.open .content-modal {
+                padding: 25px 15px 15px;
+            }
+            .content-header .logo {
+                max-width: 125px;
+            }
+            button.menu-mobile {
+                width: 32px;
+                height: 32px;
+                background: transparent;
+                padding: 0;
+            }
+            button.menu-mobile svg {
+                width: 100%;
+                height: 100%;
+                fill: rgb(40, 40, 40);
+                opacity: 0.8;
+            }
+            .busca-mobile {
+                padding-right: 16px;
+            }
+            .busca-mobile svg {
+                fill: var(--cor-primaria);
+                width: 32px;
+                height: 32px;
+            }
+            header .content-header {
+                height: 80px;
+            }
+            section#corpo {
+                padding: 0;
+            }
+            .topVakinha h1+span {
+                color: rgb(40, 40, 40);
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .topVakinha h1 {
+                font-size: 24px;
+            }
+            .detailsVakinha .detalhes {
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+            .detailsVakinha .resumo {
+                display: none;
+            }
+            .jLFjnt {
+                width: 30px;
+                height: 30px;
+            }
+            .lgcmt {
+                height: 30px;
+                width: 30px;
+                max-width: 30px;
+                line-height: 30px;
+            }
+            .gNSeDc {
+                width: 10px;
+            }
+            .menu-detalhes ul li {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .facebook-comments .content-box h4 {
+                font-size: 15px;
+            }
+            .facebook-comments .content-box .comentario .content-comentario .avatar {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook-comments .content-box .comentario .text-comentario {
+                width: calc(100% - 50px);
+            }
+            .facebook-comments .content-box .comentario .text-comentario h3 {
+                font-size: 15px;
+            }
+            .facebook-comments .content-box .comentario .text-comentario p {
+                color: #1E1E1E;
+                font-size: 14px;
+                margin: 0 0 0;
+                line-height: 18px;
+                max-width: 100%;
+            }
+            .facebook-comments .content-box .comentario .text-comentario .d-flex span {
+                font-size: 13px;
+            }
+            .facebook-comments .content-box .comentario .respostas-comentarios {
+                padding-left: 20px;
+                margin: 20px 0 20px 20px;
+                border-left: 1px solid #ccc;
+            }
+            footer {
+                margin-top: 80px;
+                padding-bottom: 100px;
+            }
+            footer .aviso {
+                top: -70px;
+            }
+            footer .content {
+                flex-wrap: wrap;
+            }
+            footer .content .aba.aba-links {
+                width: 50%;
+            }
+            footer .content .aba.aba-links:nth-child(3) {
+                margin: 30px 0;
+            }
+            footer .content .aba.aba-links:nth-child(4) {
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding-bottom: 34px;
+            }
+            footer .content .aba.aba-links:nth-child(5) {
+                width: 100%;
+            }
+            footer .content .aba.aba-links:nth-child(5) ul {
+                display: flex;
+            }
+            footer .content .aba.aba-links:nth-child(5) ul li:first-child {
+                margin-right: 15px;
+            }
+            .progresso-mobile .porcentagem {
+                color: var(--cor-primaria);
+                font-weight: bold;
+                margin-right: 10px;
+                flex: 0 1 0%;
+                font-size: 18px;
+            }
+            .progresso-mobile .barra {
+                width: 100%;
+                overflow: hidden;
+                border-radius: 15px;
+                height: 10px;
+                background: rgb(241, 240, 240);
+                display: inline-block;
+            }
+            .progresso-mobile .barra .barraParcial {
+                overflow: hidden;
+                background: rgb(36, 202, 104);
+                height: 100%;
+                border-radius: 15px;
+                flex: 1 1 0%;
+            }
+            .arrecadacaoMobile {
+                font-size: 16px;
+                font-weight: normal;
+                margin-top: 10px;
+            }
+            .arrecadacaoMobile span {
+                color: rgb(138, 138, 138);
+            }
+            .arrecadacaoMobile strong {
+                font-size: 22px;
+                font-weight: 700;
+                color: var(--cor-primaria);
+                margin-right: 5px;
+            }
+            .resumo-mobile {
+                position: sticky;
+                top: 10px;
+                background: #fff;
+                z-index: 10;
+                padding: 20px 15px;
+            }
+            .detailsVakinha .detalhes .detalhes-view {
+                margin-bottom: -30px;
+            }
+            #fixed-mobile {
+                padding: 16px;
+                border-radius: 16px 16px 0px 0px;
+                background-color: rgb(255, 255, 255);
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                z-index: 5;
+            }
+            #fixed-mobile button.btn-ajudar {
+                -moz-box-align: center;
+                align-items: center;
+                cursor: pointer;
+                color: rgb(255, 255, 255);
+                border-radius: 8px;
+                display: flex;
+                -moz-box-pack: center;
+                justify-content: center;
+                border: 1px solid transparent;
+                background-color: var(--cor-primaria);
+                padding: 12px 16px;
+                width: 100%;
+                font-size: 20px;
+                line-height: 36px;
+                font-family: "Montserrat", serif;
+                transition: all .2s linear;
+                font-weight: 700;
+            }
+            #fixed-mobile button.btn-ajudar:hover {
+                background-color: var(--cor-secundaria);
+            }
+            .switch-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px;
+                background-color: #f7f7f7;
+                border-radius: 10px;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            .switch-info {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+            }
+            .switch-info span {
+                font-size: 14px;
+                color: #333;
+            }
+            .info-button {
+                border: none;
+                background-color: transparent;
+                color: #888;
+                font-size: 14px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .info-button:hover {
+                color: #555;
+            }
+            .toggle-switch {
+                position: relative;
+                display: inline-block;
+                width: 40px;
+                height: 20px;
+            }
+            .toggle-switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+            .slider {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                transition: 0.4s;
+                border-radius: 20px;
+            }
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 16px;
+                width: 16px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                transition: 0.4s;
+                border-radius: 50%;
+            }
+            input:checked+.slider {
+                background-color: #24ca68;
+            }
+            input:checked+.slider:before {
+                transform: translateX(20px);
+            }
+        }
+    </style>
+
+    
+
+    <script>
+        window.pixelId = "6a8a10f4e08f7866db223c66";
+        (function() {
+            let u = document.createElement('script');
+            u.async = true;
+            u.defer = true;
+            u.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+            document.head.appendChild(u);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="content-header d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="32" fill="none" viewBox="0 0 151 40"><path fill="#24CA68" fill-rule="evenodd" d="M6.253 0h30.494a6.27 6.27 0 0 1 4.417 1.839A6.28 6.28 0 0 1 43 6.26V28.96q.001.148-.005.29V40l-8.12-4.775H6.253a6.27 6.27 0 0 1-4.416-1.84A6.28 6.28 0 0 1 0 28.964V6.263a6.28 6.28 0 0 1 1.837-4.421A6.27 6.27 0 0 1 6.253.002zm15.484 21.578q-.348 0-.692.046L15.3 11.647a3.97 3.97 0 0 0-2.732-5.986 3.956 3.956 0 0 0-4.246 2.262 3.97 3.97 0 0 0 1.065 4.697c.668.557 1.5.879 2.368.916l5.85 10.146a5.116 5.116 0 0 0 4.113 8.111 5.1 5.1 0 0 0 4.555-2.756 5.12 5.12 0 0 0-.368-5.317l5.87-10.178a3.96 3.96 0 0 0 3.692-3.085 3.97 3.97 0 0 0-2.003-4.376 3.955 3.955 0 0 0-4.744.784 3.97 3.97 0 0 0-.49 4.79l-5.754 9.976a5 5 0 0 0-.736-.058z" clip-rule="evenodd"></path><path fill="#24CA68" d="M52.267 15.294a4.7 4.7 0 0 1-.26-1.078 2.07 2.07 0 0 1 .536-1.568A2.02 2.02 0 0 1 54.05 12c.502-.003.988.174 1.372.5.385.325.643.778.729 1.278l2.82 9.617h.057l2.821-9.617c.086-.5.344-.953.728-1.28A2.1 2.1 0 0 1 63.95 12a2 2 0 0 1 1.506.65 2.05 2.05 0 0 1 .537 1.566 4.5 4.5 0 0 1-.26 1.078L61.76 26.486C61.358 27.622 61.093 28 58.998 28s-2.359-.378-2.761-1.514zM80.562 23.504c.056.963.202 1.92.438 2.855a1.78 1.78 0 0 1-1.226 1.552 1.8 1.8 0 0 1-.69.079 2.28 2.28 0 0 1-1.823-.654 2.3 2.3 0 0 1-.672-1.822 7.3 7.3 0 0 1-5.8 2.476 4.52 4.52 0 0 1-3.299-1.165A4.55 4.55 0 0 1 66 23.65c0-3.524 2.67-4.513 5.92-4.892l2.58-.292c1.009-.11 1.829-.35 1.829-1.576s-1.25-1.747-2.67-1.747c-3.141 0-3.222 2.33-4.905 2.33a1.68 1.68 0 0 1-1.64-.975 1.7 1.7 0 0 1-.155-.655c0-1.688 2.38-3.844 6.73-3.844 4.064 0 6.879 1.311 6.879 4.368zm-4.237-3.058a3.8 3.8 0 0 1-1.829.67l-1.537.232c-1.771.263-2.729.816-2.729 2.097 0 .96.898 1.747 2.355 1.747 2.323 0 3.745-1.514 3.745-3.086zM83 8.153c0-.571.213-1.119.591-1.522.379-.404.892-.631 1.428-.631s1.049.227 1.427.63c.38.404.592.952.592 1.523v9.786l4.484-5.308c.19-.244.427-.443.693-.586.267-.142.558-.224.856-.24.489.01.956.216 1.31.577.353.36.567.85.6 1.37.01.27-.04.54-.145.785a1.7 1.7 0 0 1-.464.63l-2.993 3.336 4.204 6.015c.273.404.419.889.417 1.386a2.16 2.16 0 0 1-.554 1.461 1.9 1.9 0 0 1-1.354.633 1.97 1.97 0 0 1-1.037-.243 2.1 2.1 0 0 1-.788-.758l-3.816-5.75-1.411 1.326v3.274c0 .571-.213 1.119-.591 1.522-.379.404-.892.631-1.428.631a1.96 1.96 0 0 1-1.428-.63 2.23 2.23 0 0 1-.59-1.523zM99 6c.463 0 .911.179 1.269.506s.602.783.693 1.288c.09.506.02 1.031-.198 1.486a2.1 2.1 0 0 1-.999 1.008 1.8 1.8 0 0 1-1.346.074 2.03 2.03 0 0 1-1.082-.895 2.43 2.43 0 0 1-.327-1.457c.045-.513.249-.993.576-1.357A1.9 1.9 0 0 1 99 6m-1.921 8.037c0-.281.05-.56.146-.82.097-.26.238-.495.417-.694.178-.199.39-.357.623-.464a1.75 1.75 0 0 1 1.47 0c.234.107.446.265.624.464.179.199.32.435.417.695s.146.538.146.82v11.82c0 .569-.203 1.113-.563 1.515S99.51 28 99 28s-.998-.226-1.358-.627a2.27 2.27 0 0 1-.563-1.515zM104 14.133c0-1.281.565-2.128 1.866-2.128 1.3 0 1.867.847 1.867 2.128v.55h.057a6 6 0 0 1 2.173-1.996 5.8 5.8 0 0 1 2.834-.686c2.488 0 5.203 1.282 5.203 5.596v8.276c0 .564-.218 1.105-.605 1.504a2.03 2.03 0 0 1-1.46.623 2.03 2.03 0 0 1-1.459-.623 2.16 2.16 0 0 1-.605-1.504V18.44c0-1.72-.821-2.944-2.603-2.944a3.17 3.17 0 0 0-2.24 1.009 3.36 3.36 0 0 0-.899 2.342v7.023c0 .564-.217 1.105-.605 1.504a2.03 2.03 0 0 1-1.459.623 2.03 2.03 0 0 1-1.46-.623A2.16 2.16 0 0 1 104 25.87zM121 8.153c0-.57.218-1.119.605-1.522.387-.404.912-.631 1.46-.631s1.073.227 1.46.63c.387.404.604.952.604 1.523v5.927h.057a5.6 5.6 0 0 1 2.04-1.721 5.35 5.35 0 0 1 2.569-.551c2.489 0 5.205 1.298 5.205 5.663v8.376c0 .57-.218 1.119-.605 1.522-.387.404-.912.631-1.46.631a2.02 2.02 0 0 1-1.46-.63 2.2 2.2 0 0 1-.604-1.523v-7.524c0-1.74-.821-2.98-2.602-2.98a3.15 3.15 0 0 0-2.24 1.022 3.42 3.42 0 0 0-.898 2.37v7.107c0 .571-.218 1.12-.605 1.523-.387.404-.913.63-1.46.63a2.02 2.02 0 0 1-1.46-.63 2.2 2.2 0 0 1-.605-1.523zM150.562 23.504c.056.963.203 1.92.438 2.855a1.78 1.78 0 0 1-1.227 1.553 1.8 1.8 0 0 1-.689.078 2.28 2.28 0 0 1-1.824-.654 2.3 2.3 0 0 1-.672-1.822 7.3 7.3 0 0 1-5.8 2.476 4.52 4.52 0 0 1-3.298-1.165A4.55 4.55 0 0 1 136 23.65c0-3.524 2.669-4.513 5.921-4.892l2.579-.292c1.017-.11 1.829-.35 1.829-1.576s-1.248-1.747-2.669-1.747c-3.141 0-3.221 2.33-4.905 2.33a1.68 1.68 0 0 1-1.243-.433 1.7 1.7 0 0 1-.552-1.197c0-1.688 2.379-3.844 6.729-3.844 4.063 0 6.879 1.311 6.879 4.368zm-4.237-3.058a3.8 3.8 0 0 1-1.828.67l-1.538.232c-1.77.263-2.728.816-2.728 2.097 0 .96.897 1.747 2.355 1.747 2.321 0 3.743-1.514 3.743-3.086z"></path></svg>
+                    </a>
+                </div>
+                <div class="menu-header d-none d-lg-flex d-xl-flex align-items-center">
+                    <div class="item-menu"><span>Como ajudar</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path></svg>
+                    </div>
+                    <div class="item-menu"><span>Descubra</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path></svg>
+                    </div>
+                    <div class="item-menu"><span>Como funciona</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path></svg>
+                    </div>
+                    <div class="logArea d-flex align-items-center justify-content-end">
+                        <div class="item-menu-busca">
+                            <span>Buscar</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 
+                            1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34C6.37 3.53 3 6.68 3 10.5
+                            3 14.09 5.91 17 9.5 17c2.03 0 3.94-.77 5.34-2.07l.27.28v.79l4.25
+                            4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08
+                            0-1.49L15.5 14z"></path></svg>
+                        </div>
+                        <div class="item-menu-account"><span>Minha conta</span></div>
+                        <div class="btn-create">
+                            <button type="button" class="btn-create-button">Criar vaquinha</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-mobile d-flex d-lg-none d-xl-none align-items-center">
+                    <div class="busca-mobile">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 
+                            16 11.11 16 9.5 16 5.91 13.09 3 9.5
+                            3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0
+                            3.09-.59 4.23-1.57l.27.28v.79l5 4.99
+                            L20.49 19zm-6 0C7.01 14 5 11.99
+                            5 9.5S7.01 5 9.5 5 14 7.01 14
+                            9.5 11.99 14 9.5 14z"></path>
+                        </svg>
+                    </div>
+                    <button class="menu-mobile">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M3 18h12v-2H3zM3 6v2h18V6zm0 
+                            7h18v-2H3z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="corpo">
+        <div class="container">
+            <div class="topVakinha">
+                <span>Saúde / Tratamentos</span>
+                <h1>Ajude Heloisa a buscar uma nova possibilidade de tratamento contra o câncer</h1>
+                <span>Heloisa tem apenas 1 ano e 8 meses e enfrenta uma batalha contra o câncer. Depois de passar por cirurgias e diferentes protocolos convencionais, sua família busca uma nova possibilidade de tratamento em São Paulo. Para isso, precisa arrecadar R$ 200 mil.</span>
+            </div>
+            <div class="detailsVakinha d-flex flex-wrap">
+                <div class="detalhes">
+                    <div class="detalhes-view">
+                        <div class="galeria">
+                            <div class="swiper-wrapper">
+                                <div class="image swiper-slide">
+                                    <img src="images/heloisa.jpeg" alt="Heloisa com sua mãe e durante o tratamento">
+                                </div>
+                            </div>
+                            <div class="galeria-pagination"></div>
+                        </div>
+                        <div class="sc-jXbUNg jeWFMw">
+                            <ul class="sc-46fe23d1-0 haSOVG">
+                                <li class="sc-46fe23d1-1 gNSeDc">
+                                    <img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="images/avs.svg">
+                                </li>
+                                <li class="sc-46fe23d1-1 gNSeDc">
+                                    <img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="images/perfil.png">
+                                </li>
+                                <li class="sc-46fe23d1-1 gNSeDc">
+                                    <img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="images/imm.svg">
+                                </li>
+                                <li class="sc-46fe23d1-1 gNSeDc">
+                                    <img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="images/lo.webp">
+                                </li>
+                                <li class="sc-46fe23d1-1 gNSeDc">
+                                    <img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="images/kc.webp">
+                                </li>
+                                <li class="sc-46fe23d1-1 gNSeDc">
+                                    <section class="sc-46fe23d1-3 jLFjnt">+</section>
+                                </li>
+                            </ul>
+                            <div class="sc-jXbUNg kaMzRM">
+                                <span class="sc-fqkvVR ivmFdA"><span id="coracoes">278</span> corações recebidos</span>
+                                <div class="sc-jXbUNg iVMVsL">
+                                    <svg width="16" height="16" viewBox="0 0 18.319 15.34">
+                                        <defs>
+                                            <radialGradient id="heartGradient" cx="0.298" cy="0.5" r="1.023" gradientTransform="matrix(0.853, 0, 0, -1, 0.003, 2)" gradientUnits="objectBoundingBox">
+                                                <stop offset="0" stop-color="#24ca68"></stop>
+                                                <stop offset="0.704" stop-color="#0a8f51"></stop>
+                                                <stop offset="1" stop-color="#007a48"></stop>
+                                            </radialGradient>
+                                        </defs>
+                                        <path d="M9.16,2.184A5.647,5.647,0,0,0,3.174.242C.695,1.027-.329,3.754.092,6.165c.667,3.826,4.845,7.644,8.459,9.055a1.678,1.678,0,0,0,.6.12h.032a1.633,1.633,0,0,0,.59-.12c3.649-1.445,7.792-5.229,8.46-9.055a6.259,6.259,0,0,0,.091-1.012V5.048A4.864,4.864,0,0,0,15.145.242,5.119,5.119,0,0,0,13.6,0,5.855,5.855,0,0,0,9.16,2.184" fill="url(#heartGradient)"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resumo-mobile sticker d-block d-lg-none d-xl-none">
+                        <div class="perfil d-flex">
+                            <div class="avatar">
+                                <img src="images/perfil.png" alt="Campanha para Heloisa">
+                            </div>
+                            <div class="dadosPerfil">
+                                <h3>Campanha para Heloisa</h3>
+                                <span class="ativo">Criada em: 27 de ago. de 2026</span>
+                                <span class="vakinhas">Tratamento de Heloisa <div class="bullet"></div> São Paulo</span>
+                            </div>
+                        </div>
+                        <div class="progresso-mobile d-flex align-items-center">
+                            <div class="porcentagem"><span id="porcentagem">55,57% completo</span></div>
+                            <div class="barra" style="flex:1; margin: 0 0.5rem;">
+                                <div class="barraParcial" id="barraMobile" style="background:#24CA68; height:8px; width:55.57%;"></div>
+                            </div>
+                        </div>
+                        <div class="arrecadacaoMobile">
+                            <strong id="valorMobile">R$ 111.144,48</strong> de <span>R$ 200.000,00</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-detalhes">
+                        <ul>
+                            <li class="active">Sobre</li>
+                            <li>Novidades</li>
+                            <li>Quem ajudou</li>
+                        </ul>
+                    </div>
+
+                    <div class="show-sobre">
+                        <span class="inicio"><strong>Vaquinha criada em:</strong> 27 de ago. de 2026</span>
+                        <div class="sobre-imagem" style="margin:12px 0;">
+                        </div>
+                        <div>
+<p><strong>💔 Heloisa tem apenas 1 ano e 8 meses e luta contra o câncer</strong></p>
+<p>Heloisa tem apenas 1 ano e 8 meses e enfrenta uma batalha que nenhuma criança deveria precisar enfrentar. Ela foi diagnosticada com nefroblastoma, um tipo de tumor que pode atingir crianças pequenas.</p>
+<p>Desde o diagnóstico, Heloisa passou por um longo e difícil caminho de tratamento. Foram 3 cirurgias e diferentes protocolos convencionais indicados para o caso.</p>
+<p>Infelizmente, segundo o relato da família, Heloisa não apresentou a resposta esperada aos tratamentos realizados e teve uma nova recidiva. Depois de todas as opções convencionais oferecidas pelo hospital, a família recebeu a notícia de que não havia mais tratamento convencional disponível naquele momento.</p>
+<p>Para uma mãe e uma família inteira, receber uma notícia como essa sobre uma criança tão pequena é uma dor difícil de explicar. Mas, mesmo diante dessa realidade, a família de Heloisa decidiu continuar procurando uma possibilidade.</p>
+<p><strong>🥺 Uma nova possibilidade em São Paulo</strong></p>
+<p>A família encontrou em São Paulo uma possibilidade de acompanhamento e tratamento particular com uma abordagem diferente da que Heloisa recebeu até agora.</p>
+<p>Esse novo protocolo é visto pela família como uma esperança diante de uma situação em que as opções convencionais já foram esgotadas. Para que Heloisa possa iniciar essa nova etapa, porém, existe um grande obstáculo: o custo.</p>
+<p>A família precisa arrecadar aproximadamente R$ 200.000 para conseguir iniciar o tratamento e arcar com os custos necessários para essa nova etapa.</p>
+<p>É um valor muito alto para uma família conseguir sozinha. Por isso, eles decidiram pedir ajuda e criar esta campanha.</p>
+<p><strong>❤️ Ajude Heloisa a buscar essa nova possibilidade</strong></p>
+<p>Neste momento, a família de Heloisa está fazendo tudo o que pode para conseguir levar a filha até São Paulo e iniciar essa nova etapa de tratamento.</p>
+<p>O objetivo desta campanha é arrecadar recursos para custear o tratamento particular de Heloisa, além das despesas necessárias para que ela possa realizar esse acompanhamento.</p>
+<p>Cada contribuição pode ajudar a família a se aproximar desse objetivo. Mesmo uma pequena doação, quando somada à ajuda de muitas pessoas, pode representar um apoio importante neste momento.</p>
+<p>Se você puder contribuir, ajude Heloisa e sua família a buscar essa possibilidade. Se não puder doar, compartilhe esta campanha para que a história dela possa chegar até mais pessoas.</p>
+<p>Heloisa é apenas uma criança e sua família continua lutando por ela. 🙏 Toda ajuda pode fazer parte dessa corrente de solidariedade.</p>
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-success" style="background-color: #24CA68 !important; width: 100% !important; display: block;" onclick="openDonateModal()">
+  <b>QUERO AJUDAR HELOISA 💖</b>
+</button>
+
+                    </div>
+
+                    <div class="plugin-facebook">
+                        <div class="box-comentarios-face facebook-comments">
+                            <div class="content-box">
+                                <h4>Apoiadores — 2.148 pessoas já apoiaram a Heloisa</h4>
+                                <div class="comentario">
+                                    <div class="content-comentario">
+                                        <div class="avatar">
+                                            <img src="images/05.jpg" alt="Eduardo A.">
+                                        </div>
+                                        <div class="text-comentario">
+                                            <h3>Eduardo A.</h3>
+                                            <p>R$150 — “Que essa campanha alcance muitas pessoas e consiga ajudar a Heloisa nesse momento tão difícil. 🙏”</p>
+                                            <div class="d-flex align-items-center">
+                                                <span>Responder</span><span>Curtir · 344 curtidas</span><span>Seguir</span><span>há 3 min</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comentario">
+                                    <div class="content-comentario">
+                                        <div class="avatar">
+                                            <img src="images/07.jpg" alt="Débora S.">
+                                        </div>
+                                        <div class="text-comentario">
+                                            <h3>Débora S.</h3>
+                                            <p>R$25 — “Vou compartilhar para que a história da Heloisa chegue a mais pessoas. ❤️”</p>
+                                            <div class="d-flex align-items-center">
+                                                <span>Responder</span><span>Curtir · 349 curtidas</span><span>Seguir</span><span>há 14 min</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comentario">
+                                    <div class="content-comentario">
+                                        <div class="avatar">
+                                            <img src="images/02.jpg" alt="Bruno F.">
+                                        </div>
+                                        <div class="text-comentario">
+                                            <h3>Bruno F.</h3>
+                                            <p>R$50 — “Muita força para a Heloisa e toda a família…”</p>
+                                            <div class="d-flex align-items-center">
+                                                <span>Responder</span><span>Curtir · 280 curtidas</span><span>Seguir</span><span>há 22 min</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comentario">
+                                    <div class="content-comentario">
+                                        <div class="avatar">
+                                            <img src="images/01.jpg" alt="Paulo C.">
+                                        </div>
+                                        <div class="text-comentario">
+                                            <h3>Paulo C.</h3>
+                                            <p>R$100</p>
+                                            <div class="d-flex align-items-center">
+                                                <span>Responder</span><span>Curtir · 192 curtidas</span><span>Seguir</span><span>há 27 min</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comentario">
+                                    <div class="content-comentario">
+                                        <div class="avatar">
+                                            <img src="images/03.jpg" alt="André A.">
+                                        </div>
+                                        <div class="text-comentario">
+                                            <h3>André A.</h3>
+                                            <p>R$30</p>
+                                            <div class="d-flex align-items-center">
+                                                <span>Responder</span><span>Curtir · 217 curtidas</span><span>Seguir</span><span>há 36 min</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="final">Você precisa estar logado para comentar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resumo">
+                    <div class="sticker-resumo">
+                        <div class="progresso">
+                            <div class="barra-geral">
+                                <div class="barraTotal" style="background:#e9ecef; height:10px; border-radius:5px; overflow:hidden;">
+                                    <div class="barraParcial" id="barra" style="width:55.57%; background:#24CA68; height:10px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrecadado">
+                            <span>Arrecadado</span>
+                            <h2 id="doado">R$ 111.144,48</h2>
+                        </div>
+                        <div class="meta">
+                            <span>Meta</span>
+                            <span>R$ 200.000,00</span>
+                        </div>
+                        <div class="apoiadores">
+                            <span>Apoiadores</span>
+                            <span id="apoiadores">2.148</span>
+                        </div>
+                        <div class="acao">
+                            <button type="button" class="btn-ajudar" style="background-color: #24CA68!important;" onclick="openDonateModal()">QUERO AJUDAR HELOISA 💖</button>
+                        </div>
+                        <div class="perfil d-flex mt-4">
+                            <div class="avatar">
+                                <img src="images/perfil.png" alt="Campanha para Heloisa">
+                            </div>
+                            <div class="dadosPerfil">
+                                <h3>Campanha para Heloisa</h3>
+                                <span class="ativo">Criada em: 27 de ago. de 2026</span>
+                                <span class="vakinhas">Tratamento de Heloisa <div class="bullet"></div> São Paulo</span>
+                                <a href="#">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fixed-mobile" class="d-block d-lg-none d-xl-none" style="position:fixed; bottom:0; left:0; right:0; padding:1rem; background:#fff; box-shadow:0 -2px 6px rgba(0,0,0,0.1);">
+        <button type="button" class="btn-ajudar w-100" style="background-color: #24CA68!important;" onclick="openDonateModal()">
+            QUERO AJUDAR HELOISA 💖
+        </button>
+    </section>
+
+    <footer style="margin-top:2rem;">
+        <div class="aviso" style="background:#f9f9f9; padding:1rem 0;">
+            <div class="container">
+                <span>AVISO LEGAL: O texto e as imagens incluídos nessa página são de única e exclusiva responsabilidade do criador da vaquinha e não representam a opinião ou endosso da plataforma Vakinha.</span>
+            </div>
+        </div>
+        <div class="container" style="margin-top:2rem;">
+            <div class="content-footer">
+                <div class="topFooter d-flex align-items-center justify-content-between">
+                    <div class="logo-rodape">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="32" fill="none" viewBox="0 0 151 40"><path fill="#24CA68" fill-rule="evenodd" d="M6.253 0h30.494a6.27 6.27 0 0 1 4.417 1.839A6.28 6.28 0 0 1 43 6.26V28.96q.001.148-.005.29V40l-8.12-4.775H6.253a6.27 6.27 0 0 1-4.416-1.84A6.28 6.28 0 0 1 0 28.964V6.263a6.28 6.28 0 0 1 1.837-4.421A6.27 6.27 0 0 1 6.253.002zm15.484 21.578q-.348 0-.692.046L15.3 11.647a3.97 3.97 0 0 0-2.732-5.986 3.956 3.956 0 0 0-4.246 2.262 3.97 3.97 0 0 0 1.065 4.697c.668.557 1.5.879 2.368.916l5.85 10.146a5.116 5.116 0 0 0 4.113 8.111 5.1 5.1 0 0 0 4.555-2.756 5.12 5.12 0 0 0-.368-5.317l5.87-10.178a3.96 3.96 0 0 0 3.692-3.085 3.97 3.97 0 0 0-2.003-4.376 3.955 3.955 0 0 0-4.744.784 3.97 3.97 0 0 0-.49 4.79l-5.754 9.976a5 5 0 0 0-.736-.058z" clip-rule="evenodd"></path><path fill="#24CA68" d="M52.267 15.294a4.7 4.7 0 0 1-.26-1.078 2.07 2.07 0 0 1 .536-1.568A2.02 2.02 0 0 1 54.05 12c.502-.003.988.174 1.372.5.385.325.643.778.729 1.278l2.82 9.617h.057l2.821-9.617c.086-.5.344-.953.728-1.28A2.1 2.1 0 0 1 63.95 12a2 2 0 0 1 1.506.65 2.05 2.05 0 0 1 .537 1.566 4.5 4.5 0 0 1-.26 1.078L61.76 26.486C61.358 27.622 61.093 28 58.998 28s-2.359-.378-2.761-1.514zM80.562 23.504c.056.963.202 1.92.438 2.855a1.78 1.78 0 0 1-1.226 1.552 1.8 1.8 0 0 1-.69.079 2.28 2.28 0 0 1-1.823-.654 2.3 2.3 0 0 1-.672-1.822 7.3 7.3 0 0 1-5.8 2.476 4.52 4.52 0 0 1-3.299-1.165A4.55 4.55 0 0 1 66 23.65c0-3.524 2.67-4.513 5.92-4.892l2.58-.292c1.009-.11 1.829-.35 1.829-1.576s-1.25-1.747-2.67-1.747c-3.141 0-3.222 2.33-4.905 2.33a1.68 1.68 0 0 1-1.64-.975 1.7 1.7 0 0 1-.155-.655c0-1.688 2.38-3.844 6.73-3.844 4.064 0 6.879 1.311 6.879 4.368zm-4.237-3.058a3.8 3.8 0 0 1-1.829.67l-1.537.232c-1.771.263-2.729.816-2.729 2.097 0 .96.898 1.747 2.355 1.747 2.323 0 3.745-1.514 3.745-3.086zM83 8.153c0-.571.213-1.119.591-1.522.379-.404.892-.631 1.428-.631s1.049.227 1.427.63c.38.404.592.952.592 1.523v9.786l4.484-5.308c.19-.244.427-.443.693-.586.267-.142.558-.224.856-.24.489.01.956.216 1.31.577.353.36.567.85.6 1.37.01.27-.04.54-.145.785a1.7 1.7 0 0 1-.464.63l-2.993 3.336 4.204 6.015c.273.404.419.889.417 1.386a2.16 2.16 0 0 1-.554 1.461 1.9 1.9 0 0 1-1.354.633 1.97 1.97 0 0 1-1.037-.243 2.1 2.1 0 0 1-.788-.758l-3.816-5.75-1.411 1.326v3.274c0 .571-.213 1.119-.591 1.522-.379.404-.892.631-1.428.631a1.96 1.96 0 0 1-1.428-.63 2.23 2.23 0 0 1-.59-1.523zM99 6c.463 0 .911.179 1.269.506s.602.783.693 1.288c.09.506.02 1.031-.198 1.486a2.1 2.1 0 0 1-.999 1.008 1.8 1.8 0 0 1-1.346.074 2.03 2.03 0 0 1-1.082-.895 2.43 2.43 0 0 1-.327-1.457c.045-.513.249-.993.576-1.357A1.9 1.9 0 0 1 99 6m-1.921 8.037c0-.281.05-.56.146-.82.097-.26.238-.495.417-.694.178-.199.39-.357.623-.464a1.75 1.75 0 0 1 1.47 0c.234.107.446.265.624.464.179.199.32.435.417.695s.146.538.146.82v11.82c0 .569-.203 1.113-.563 1.515S99.51 28 99 28s-.998-.226-1.358-.627a2.27 2.27 0 0 1-.563-1.515zM104 14.133c0-1.281.565-2.128 1.866-2.128 1.3 0 1.867.847 1.867 2.128v.55h.057a6 6 0 0 1 2.173-1.996 5.8 5.8 0 0 1 2.834-.686c2.488 0 5.203 1.282 5.203 5.596v8.276c0 .564-.218 1.105-.605 1.504a2.03 2.03 0 0 1-1.46.623 2.03 2.03 0 0 1-1.459-.623 2.16 2.16 0 0 1-.605-1.504V18.44c0-1.72-.821-2.944-2.603-2.944a3.17 3.17 0 0 0-2.24 1.009 3.36 3.36 0 0 0-.899 2.342v7.023c0 .564-.217 1.105-.605 1.504a2.03 2.03 0 0 1-1.459.623 2.03 2.03 0 0 1-1.46-.623A2.16 2.16 0 0 1 104 25.87zM121 8.153c0-.57.218-1.119.605-1.522.387-.404.912-.631 1.46-.631s1.073.227 1.46.63c.387.404.604.952.604 1.523v5.927h.057a5.6 5.6 0 0 1 2.04-1.721 5.35 5.35 0 0 1 2.569-.551c2.489 0 5.205 1.298 5.205 5.663v8.376c0 .57-.218 1.119-.605 1.522-.387.404-.912.631-1.46.631a2.02 2.02 0 0 1-1.46-.63 2.2 2.2 0 0 1-.604-1.523v-7.524c0-1.74-.821-2.98-2.602-2.98a3.15 3.15 0 0 0-2.24 1.022 3.42 3.42 0 0 0-.898 2.37v7.107c0 .571-.218 1.12-.605 1.523-.387.404-.913.63-1.46.63a2.02 2.02 0 0 1-1.46-.63 2.2 2.2 0 0 1-.605-1.523zM150.562 23.504c.056.963.203 1.92.438 2.855a1.78 1.78 0 0 1-1.227 1.553 1.8 1.8 0 0 1-.689.078 2.28 2.28 0 0 1-1.824-.654 2.3 2.3 0 0 1-.672-1.822 7.3 7.3 0 0 1-5.8 2.476 4.52 4.52 0 0 1-3.298-1.165A4.55 4.55 0 0 1 136 23.65c0-3.524 2.669-4.513 5.921-4.892l2.579-.292c1.017-.11 1.829-.35 1.829-1.576s-1.248-1.747-2.669-1.747c-3.141 0-3.221 2.33-4.905 2.33a1.68 1.68 0 0 1-1.243-.433 1.7 1.7 0 0 1-.552-1.197c0-1.688 2.379-3.844 6.729-3.844 4.063 0 6.879 1.311 6.879 4.368zm-4.237-3.058a3.8 3.8 0 0 1-1.828.67l-1.538.232c-1.77.263-2.728.816-2.728 2.097 0 .96.897 1.747 2.355 1.747 2.321 0 3.743-1.514 3.743-3.086z"></path></svg>
+                    </div>
+                    <div class="sociais">
+                        <ul class="d-flex align-items-center" style="list-style:none; gap:8px; margin:0; padding:0;">
+                            <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 
+                            5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 
+                            2 16.2V7.8A5.8 5.8 0 0 1 7.8 
+                            2m-.2 2A3.6 3.6 0 0 
+                            0 4 7.6v8.8C4 18.39 5.61 20 
+                            7.6 20h8.8a3.6 3.6 0 0 0 
+                            3.6-3.6V7.6C20 5.61 18.39 4 16.4 
+                            4H7.6m9.65 1.5a1.25 1.25 0 0 
+                            1 1.25 1.25A1.25 1.25 0 0 1 
+                            17.25 8 1.25 1.25 0 0 1 16 
+                            6.75a1.25 1.25 0 0 1 1.25-1.25M12 
+                            7a5 5 0 0 1 5 5 5 5 0 0 1-5 
+                            5 5 5 0 0 1-5-5 5 5 0 0 1 
+                            5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 
+                            0 3 3 3 3 0 0 0 3-3 3 3 0 0 
+                            0-3-3z"></path></svg></a></li>
+                            <li>
+                                <div class="separador" style="width:1px; height:16px; background:#ccc;"></div>
+                            </li>
+                            <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M5 3h14a2 
+                            2 0 0 1 2 2v14a2 2 0 0 1-2 
+                            2H5a2 2 0 0 1-2-2V5a2 2 
+                            0 0 1 2-2m13 2h-2.5A3.5 3.5 
+                            0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 
+                            1 0 0 1 1-1h2V5z"></path></svg></a></li>
+                            <li>
+                                <div class="separador" style="width:1px; height:16px; background:#ccc;"></div>
+                            </li>
+                            <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10 
+                            15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 
+                            1.9.07.8.1 1.49.1 2.09L22 12c0 
+                            2.19-.16 3.8-.44 4.83-.25.9-.83 
+                            1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 
+                            19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 
+                            12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 
+                            1.73-1.73.47-.13 1.33-.22 2.65-.28C8.16 
+                            5.09 9.35 5.06 10.45 5.06L12 
+                            5c4.19 0 6.8.16 7.83.44.9.25 
+                            1.48.83 1.73 1.73z"></path></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content d-flex justify-content-between flex-wrap" style="margin-top:1rem;">
+                    <div class="aba aba-links" style="flex:1; min-width:150px; margin-right:1rem;">
+                        <h4>Links rápidos</h4>
+                        <ul style="list-style:none; padding:0; margin:0;">
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Vaquinhas</a></li>
+                            <li><a href="#">Criar vaquinhas</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Vaquinhas mais amadas</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                        </ul>
+                    </div>
+                    <div class="aba aba-links" style="flex:1; min-width:150px; margin-right:1rem;">
+                        <h4></h4>
+                        <ul style="list-style:none; padding:0; margin:0;">
+                            <li><a href="#">Dúvidas frequentes</a></li>
+                            <li><a href="#">Taxas e prazos</a></li>
+                            <li><a href="#">Loja de corações</a></li>
+                            <li><a href="#">Vakinha Premiada</a></li>
+                            <li><a href="#">Blog do Vakinha</a></li>
+                            <li><a href="#">Segurança e transparência</a></li>
+                            <li><a href="#">Busca por recibo</a></li>
+                        </ul>
+                    </div>
+                    <div class="aba aba-links" style="flex:1; min-width:150px; margin-right:1rem;">
+                        <h4>Fale conosco</h4>
+                        <ul style="list-style:none; padding:0; margin:0;">
+                            <li><a href="#">Clique aqui para falar conosco</a></li>
+                        </ul>
+                        <ul style="list-style:none; padding:0; margin:1rem 0 0 0;">
+                            <li style="padding:0 !important;">De Segunda à Sexta</li>
+                            <li>Das 9:30 às 17:00</li>
+                            <li class="d-none d-lg-block d-xl-block" style="margin-top:1rem;">
+                                <img src="images/selo_seguranca.webp" alt="Selo de Segurança">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="aba aba-links d-flex d-lg-none d-xl-none" style="min-width:150px;">
+                        <ul style="list-style:none; padding:0; margin:0; margin-left:auto;">
+                            <li style="text-align:right;">
+                                <img src="images/selo_seguranca.webp" alt="Selo de Segurança" width="86">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="aba aba-links" style="flex:1; min-width:150px;">
+                        <h4>Baixe nosso App</h4>
+                        <ul style="list-style:none; padding:0; margin:0;">
+                            <li style="padding-bottom:12px;">
+                                <a href="#"><img src="images/google_play.svg" alt="Google Play Store"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/apple_store.svg" alt="Apple Store"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright" style=" padding:1rem; text-align:center; margin-top:1rem;">
+            <span>Termos de Uso | Política de Privacidade<br>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles, e sim do nosso site.<br>© 2026 Campanha Solidária. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+    <div class="modal modal-doar" id="donateModal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+        <div class="fora-modal" onclick="closeDonateModal()" style="position:absolute; width:100%; height:100%; top:0; left:0;"></div>
+        <div class="main-content" style="position:relative; background:#fff; padding:20px; max-width:600px; width:95%; border-radius:8px; max-height:90vh; overflow-y:auto; margin:0 auto;">
+            <div class="close-modal" style="position:absolute; top:15px; right:15px; cursor:pointer; z-index:10;" onclick="closeDonateModal()">
+                <svg width="20" height="20" viewBox="0 0 320.591 320.591" fill="#666">
+                    <path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 
+                             0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 
+                             10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295
+                             a30.366 30.366 0 0 1-21.256 7.288z">
+                    </path>
+                    <path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 
+                             51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 
+                             28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 
+                             30.679 1.414 42.922-.456.487-.927.958-1.414 
+                             1.414a30.368 30.368 0 0 1-23.078 7.288z">
+                    </path>
+                </svg>
+            </div>
+
+            <header>
+                <div class="container">
+                    <div class="content-header d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <a href="#"><img src="images/vakinha-logo-88066E3580-seeklogo.com.png" alt="Vakinha Online"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <br>
+            <div style="margin-bottom: 0.5rem;font-weight: 600;"><label class="sc-fqkvVR ilmRzc">Valor da contribuição</label></div>
+            <div class="value-input">
+                <div class="currency-prefix">R$</div>
+                <input type="tel" id="contribution-input" class="value-field" placeholder="Ou o que o seu coração mandar ❤️">
+            </div>
+            <div id="error-message" class="error-message" style="display: none;">
+                Valor mínimo da doação é de R$ 20,00
+            </div>
+            <div id="max-error-message" class="error-message" style="display: none;">
+                Valor máximo permitido é de R$ 1.000,00
+            </div>
+            <div class="preset-values">
+                <button class="preset-value-btn" data-value="30">R$ 30,00</button>
+                <button class="preset-value-btn" data-value="50">R$ 50,00</button>
+                <button class="preset-value-btn" data-value="60">R$ 60,00</button>
+                <button class="preset-value-btn" data-value="70">R$ 70,00</button>
+                <button class="preset-value-btn" data-value="80">R$ 80,00 — MAIS ESCOLHIDO</button>
+                <button class="preset-value-btn" data-value="100">R$ 100,00</button>
+                <button class="preset-value-btn" data-value="200">R$ 200,00</button>
+                <button class="preset-value-btn" data-value="300">R$ 300,00</button>
+                <button class="preset-value-btn" data-value="500">R$ 500,00</button>
+                <button class="preset-value-btn" data-value="1000">R$ 1.000,00</button>
+            </div>
+            <div class="section-title">PIX seguro · Confirmação rápida</div>
+            <div class="payment-methods">
+                <div class="payment-option pix selected">
+                    <span class="radio-button"></span>
+                    <span>Pix</span>
+                </div>
+            </div>
+            <div class="section-title">Turbine sua doação</div>
+            <div class="summary-item">
+                <span>Ajude MUITO MAIS turbinando sua doação 💚</span>
+            </div>
+            <div class="charity-options">
+                <div class="charity-item" data-value="10.00">
+                    <div class="charity-icon heart-icon">
+                        <img src="images/car1.png" alt="Ícone de Coração">
+                    </div>
+                    <div class="charity-name">Auxílio transporte</div>
+                    <div class="charity-price">R$ 10,00</div>
+                </div>
+                <div class="charity-item" data-value="25.00">
+                    <div class="charity-icon heart-icon">
+                        <img src="images/doarremedios.webp" alt="Ícone de Coração">
+                    </div>
+                    <div class="charity-name">Ajuda com medicações</div>
+                    <div class="charity-price">R$ 25,00</div>
+                </div>
+                <div class="charity-item" data-value="85">
+                    <div class="charity-icon society-icon" style="overflow:unset">
+                        <img src="images/lunaa-removebg-preview.png" alt="Ícone de Sociedade">
+                    </div>
+                    <div class="charity-name">Doar cesta básica</div>
+                    <div class="charity-price">R$ 85,00</div>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary-item">
+                    <span>Contribuição:</span>
+                    <span id="modal-contribution">R$ 0,00</span>
+                </div>
+                <div class="divider"></div>
+                <div class="summary-item">
+                    <span>Total:</span>
+                    <span id="modal-total">R$ 0,00</span>
+                </div>
+            </div>
+            <button class="contribute-button" id="contribute-button">DOAR AGORA</button>
+
+            <div style="font-size: 10px; color: #6c757d; margin-top: 24px; margin-bottom: 16px; font-family: 'Inter', Arial, sans-serif;">
+                Ao clicar no botão acima você declara que é maior de 18 anos, leu e está de acordo com os <strong>Termos, Taxas e Prazos</strong>.
+            </div>
+
+            <div class="selo-container" style="display: flex; align-items: center; gap: 10px; background-color: #f1f1f1; padding: 10px; border-radius: 6px; margin-bottom: 16px;">
+                <picture>
+                    <source srcset="images/SELO.png" width="115" height="40">
+                    <img srcset="images/SELO.png" alt="Selo de segurança" style="display: block;">
+                </picture>
+                <div style="color: #6c757d; font-family: 'Inter', Arial, sans-serif; font-size: 11px;">
+                    Garantimos uma <strong>experiência segura</strong> para todos os nossos doadores.
+                </div>
+            </div>
+
+            <div style="font-size: 9px; color: #6c757d; font-family: 'Inter', Arial, sans-serif; margin-bottom: 44px;">
+                Informamos que o preenchimento do seu cadastro completo estará disponível em seu painel pessoal na plataforma após a conclusão desta doação. Importante destacar a importância da adequação do seu cadastro, informando o <strong>nome social</strong>, caso o utilize.
+            </div>
+
+            <style>
+                .main-content * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Inter', sans-serif;
+                }
+
+                .main-content header {
+                    margin-bottom: 20px;
+                }
+
+                .main-content .logo img {
+                    max-width: 150px;
+                    height: auto;
+                }
+
+                .main-content h1 {
+                    color: #4A2B0F;
+                    font-size: 20px;
+                    margin-bottom: 8px;
+                }
+
+                .main-content .id-number {
+                    color: #4A2B0F;
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                }
+
+                .main-content .section-title {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #333;
+                    margin-bottom: 15px;
+                }
+
+                .main-content .value-input {
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    margin-bottom: 5px;
+                }
+
+                .main-content .currency-prefix {
+                    background-color: #f5f5f5;
+                    border: 1px solid #ddd;
+                    border-right: none;
+                    border-radius: 5px 0 0 5px;
+                    padding: 10px 15px;
+                    display: flex;
+                    align-items: center;
+                    color: #333;
+                    font-weight: 500;
+                }
+
+                .main-content .value-field {
+                    flex: 1;
+                    border: 1px solid #ddd;
+                    border-radius: 0 5px 5px 0;
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    outline: none;
+                }
+
+                .main-content .payment-methods {
+                    display: flex;
+                    gap: 10px;
+                    margin-bottom: 30px;
+                }
+
+                .main-content .payment-option {
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+                }
+
+                .main-content .payment-option.pix {
+                    background-color: #22c55e;
+                    border-color: #22c55e;
+                    color: white;
+                }
+
+                .main-content .radio-button {
+                    width: 18px;
+                    height: 18px;
+                    border: 2px solid #ddd;
+                    border-radius: 50%;
+                    display: inline-block;
+                    position: relative;
+                }
+
+                .main-content .payment-option.pix .radio-button {
+                    border-color: white;
+                }
+
+                .main-content .payment-option.pix .radio-button::after {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    background-color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .main-content .charity-options {
+                    border: 1px dashed #ccc;
+                    border-radius: 5px;
+                    display: flex;
+                    margin-bottom: 30px;
+                    overflow: hidden;
+                }
+
+                .main-content .charity-item {
+                    flex: 1;
+                    padding: 15px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    background-color: white;
+                    color: #333;
+                    border-right: 1px dashed #a1a1a1;
+                    height: 120px;
+                    justify-content: center;
+                }
+
+                .main-content .charity-item:last-child {
+                    border-right: none;
+                }
+
+                .main-content .charity-item.selected {
+                    background-color: rgba(34, 197, 94, 0.6);
+                    color: #ffffff;
+                    text-shadow: 1px 1px 2px rgba(85, 85, 85, 0.5);
+                }
+
+                .main-content .charity-icon {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 5px;
+                    overflow: hidden;
+                }
+
+                .main-content .charity-icon img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .main-content .charity-name {
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+
+                .main-content .charity-price {
+                    font-size: 12px;
+                    color: #666;
+                }
+
+                .main-content .charity-item.selected .charity-price {
+                    color: white;
+                }
+
+                .main-content .summary {
+                    margin-bottom: 20px;
+                }
+
+                .main-content .summary-item {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    color: #666;
+                    font-size: 14px;
+                }
+
+                .main-content .divider {
+                    height: 1px;
+                    background-color: #eee;
+                    margin: 15px 0;
+                }
+
+                .main-content .contribute-button {
+                    background-color: #22c55e;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 15px;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: all 0.3s ease;
+                }
+
+                .main-content .contribute-button:disabled {
+                    background-color: #ccc;
+                    cursor: not-allowed;
+                    opacity: 0.8;
+                }
+
+                .main-content .error-message {
+                    color: #dc2626;
+                    font-size: 12px;
+                    margin-top: 5px;
+                    display: none;
+                }
+
+                .main-content .preset-values {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                    margin: 15px 0;
+                }
+
+                .main-content .preset-value-btn {
+                    padding: 10px 20px;
+                    border: 2px solid #e0e0e0;
+                    border-radius: 8px;
+                    background-color: white;
+                    color: #333;
+                    font-size: 15px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    flex: 0 0 calc(50% - 5px);
+                    min-width: 90px;
+                    white-space: nowrap;
+                }
+
+                .main-content .preset-value-btn.active {
+                    background-color: #24CA68;
+                    color: white;
+                    border-color: #24CA68;
+                }
+            </style>
+        </div>
+    </div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    let selectedAmount = 0;
+    let charityAmount = 0;
+    const MIN_AMOUNT = 20;
+    const donationFormMarkup = document.querySelector('#donateModal .main-content').innerHTML;
+    let utmParams = {};
+    
+    // Função para capturar e armazenar parâmetros UTM
+    (function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const trackingParams = {
+            src: urlParams.get('src') || '',
+            sck: urlParams.get('sck') || '',
+            utm_source: urlParams.get('utm_source') || '',
+            utm_medium: urlParams.get('utm_medium') || '',
+            utm_campaign: urlParams.get('utm_campaign') || '',
+            utm_term: urlParams.get('utm_term') || '',
+            utm_content: urlParams.get('utm_content') || '',
+            gclid: urlParams.get('gclid') || '',
+            fbclid: urlParams.get('fbclid') || '',
+            ttclid: urlParams.get('ttclid') || '',
+        };
+    
+        Object.keys(trackingParams).forEach(k => { 
+            if (trackingParams[k]) utmParams[k] = trackingParams[k]; 
+        });
+        
+        try {
+        if (Object.keys(utmParams).length > 0) {
+            localStorage.setItem('utm_params', JSON.stringify(utmParams));
+        } else {
+            const saved = localStorage.getItem('utm_params');
+            if (saved) utmParams = JSON.parse(saved);
+        }
+        } catch (_) { /* Tracking storage must never block checkout. */ }
+    })();
+    
+    // Funções auxiliares para formatação de moeda
+    function formatCurrency(value) {
+        return Number(parseFloat(value).toFixed(2)).toLocaleString('pt-BR', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        });
+    }
+    
+    // Função para atualizar total no modal
+    function updateModalTotal() {
+        const contributionEl = document.getElementById('modal-contribution');
+        const totalEl = document.getElementById('modal-total');
+        const contributeBtn = document.getElementById('contribute-button');
+        const errorMsg = document.getElementById('error-message');
+        
+        if (contributionEl) contributionEl.textContent = 'R$ ' + formatCurrency(selectedAmount);
+        const total = selectedAmount + charityAmount;
+        if (totalEl) totalEl.textContent = 'R$ ' + formatCurrency(total);
+        
+        if (selectedAmount >= MIN_AMOUNT) {
+            contributeBtn.disabled = false;
+            errorMsg.style.display = 'none';
+        } else {
+            contributeBtn.disabled = true;
+            if (selectedAmount > 0) errorMsg.style.display = 'block';
+        }
+    }
+    
+    // Função para abrir modal de doação
+    function openDonateModal() {
+        const modal = document.getElementById('donateModal');
+        if (!modal) return;
+        
+        if (!modal.querySelector('#contribution-input')) modal.querySelector('.main-content').innerHTML = donationFormMarkup;
+        modal.style.display = 'flex';
+        selectedAmount = 0; 
+        charityAmount = 0;
+        modal.querySelectorAll('.charity-item.selected, .preset-value-btn.active').forEach(el => el.classList.remove('selected', 'active'));
+        const amountInput = modal.querySelector('#contribution-input');
+        if (amountInput) amountInput.value = '';
+    
+        // Evento do Facebook
+        if (typeof sendFacebookEvent !== 'undefined') {
+            sendFacebookEvent('InitiateCheckout', {
+                content_ids: ['RubzhOGiaWpd'],
+                content_type: 'product',
+                currency: 'BRL',
+                value: 0
+            });
+        }
+    
+        const input = document.getElementById('contribution-input');
+        const presetBtns = document.querySelectorAll('.preset-value-btn');
+        const charityItems = document.querySelectorAll('.charity-item');
+        
+        if (input) {
+            input.oninput = e => {
+                let v = e.target.value.replace(/\D/g, '');
+                selectedAmount = v ? parseFloat((v / 100).toFixed(2)) : 0;
+                e.target.value = formatCurrency(selectedAmount);
+                presetBtns.forEach(b => b.classList.remove('active'));
+                updateModalTotal();
+            };
+        }
+        
+        presetBtns.forEach(btn => {
+            btn.onclick = e => {
+                e.preventDefault();
+                selectedAmount = parseFloat(btn.dataset.value);
+                input.value = formatCurrency(selectedAmount);
+                presetBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                updateModalTotal();
+            };
+        });
+        
+        charityItems.forEach(item => {
+            item.onclick = () => {
+                const val = parseFloat(item.dataset.value);
+                if (item.classList.contains('selected')) {
+                    item.classList.remove('selected');
+                    charityAmount -= val;
+                } else {
+                    item.classList.add('selected');
+                    charityAmount += val;
+                }
+                updateModalTotal();
+            };
+        });
+        
+        const btn = document.getElementById('contribute-button');
+        if (btn) {
+            btn.onclick = e => {
+                e.preventDefault();
+                if (selectedAmount >= MIN_AMOUNT) {
+                    const total = selectedAmount + charityAmount;
+                    generatePixPayment(total);
+                }
+            };
+        }
+        
+        updateModalTotal();
+    }
+    
+    function closeDonateModal() {
+        const modal = document.getElementById('donateModal');
+        if (modal) modal.style.display = 'none';
+    }
+    
+    // Função principal para gerar pagamento PIX
+    let pixGenerationPending = false;
+    async function generatePixPayment(amount) {
+        if (pixGenerationPending) return;
+        pixGenerationPending = true;
+        // Evento do Facebook
+        if (typeof sendFacebookEvent !== 'undefined') {
+            sendFacebookEvent('AddPaymentInfo', {
+                content_ids: ['RubzhOGiaWpd'],
+                content_type: 'product',
+                currency: 'BRL',
+                value: amount
+            });
+        }
+    
+        const modalContent = document.querySelector('#donateModal .main-content');
+        modalContent.innerHTML = `
+            <div style="text-align:center;padding:3rem 2rem;">
+                <div class="spinner-container" style="margin:0 auto 2rem;">
+                    <div class="spinner"></div>
+                </div>
+                <h3 style="color:#333;">Gerando seu PIX</h3>
+                <p style="color:#666;">Aguarde um momento...</p>
+            </div>
+            <style>
+                .spinner-container{width:60px;height:60px;position:relative;}
+                .spinner{width:100%;height:100%;border-radius:50%;
+                    border:5px solid #f3f3f3;border-top:5px solid #24CA68;
+                    animation:spin .8s linear infinite;}
+                @keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+            </style>
+        `;
+        
+        try {
+            const res = await fetch('/api/gerar-pix', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    amount: Math.round(amount * 100),
+                    trackingParameters: utmParams,
+                    product: 'Doação Campanha Heloisa'
+                })
+            });
+            
+            const data = await res.json();
+            if (data.success && data.pix_code) {
+                const transactionId = data.external_id;
+                sendFacebookEvent('PixGenerated', { value: amount, currency: 'BRL', transaction_id: transactionId }, true, `pix-generated-${transactionId}`);
+                
+                showPixPayment({ 
+                    amount, 
+                    qrCodeText: data.pix_code, 
+                    transactionId: transactionId 
+                });
+            } else {
+                console.error('Resposta da API ao gerar PIX:', data);
+                throw new Error(data.error || 'Erro ao gerar PIX.');
+            }
+        } catch (err) {
+            sendFacebookEvent('PixGenerationFailed', { currency: 'BRL', value: amount }, true);
+            modalContent.innerHTML = `
+                <div style="text-align:center;padding:2rem;">
+                    <h3 style="color:#d32f2f;">Erro ao gerar pagamento</h3>
+                    <p>${err.message}</p>
+                    <button onclick="closeDonateModal()" style="margin-top:1rem;padding:.75rem 1.5rem;background:#24CA68;color:#fff;border:none;border-radius:4px;cursor:pointer;">
+                        Fechar
+                    </button>
+                </div>`;
+        } finally {
+            pixGenerationPending = false;
+        }
+    }
+    
+    // Função para exibir interface de pagamento PIX
+    function showPixPayment({ amount, qrCodeText, transactionId }) {
+        const modalContent = document.querySelector('#donateModal .main-content');
+        modalContent.innerHTML = `
+            <div style="text-align:center;padding:2rem;">
+                <h3 style="color:#24CA68;">Pagamento via PIX</h3>
+                <p style="margin-bottom:1rem;">Escaneie o QR Code abaixo ou copie o código PIX Copia e Cola. <strong>O pagamento é totalmente seguro.</strong></p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrCodeText)}&size=300x300" 
+                     style="width:220px;height:220px;margin-bottom:1rem;border-radius:8px;">
+                <input id="pixCode" value="${qrCodeText}" readonly 
+                       style="width:100%;padding:10px;text-align:center;border:1px solid #ccc;border-radius:6px;">
+                <button onclick="copyPixCode()" 
+                        style="margin-top:1rem;background:#24CA68;color:#fff;padding:.75rem 1.5rem;border:none;border-radius:6px;cursor:pointer;">
+                    Copiar código PIX
+                </button>
+            </div>
+        `;
+        
+        verificarPixPagamento(transactionId, amount);
+    }
+    
+    function copyPixCode() {
+        const input = document.getElementById('pixCode');
+        if (!input) return alert('Erro ao copiar código PIX');
+        
+        navigator.clipboard.writeText(input.value)
+            .then(() => {
+                sendFacebookEvent('PixCodeCopied', {}, true);
+                alert('✅ Código PIX copiado!');
+            })
+            .catch(() => alert('❌ Copie manualmente.'));
+    }
+    
+    // Função para verificar status do pagamento PIX
+    async function verificarPixPagamento(transactionId, amount) {
+        let checking = false;
+        let completed = false;
+        const interval = setInterval(async () => {
+            if (checking || completed) return;
+            checking = true;
+            try {
+                const res = await fetch(`/api/verificar-pix?id=${transactionId}`);
+                const data = await res.json();
+                
+                if (data.status && data.status.toLowerCase() === 'paid') {
+                    completed = true;
+                    clearInterval(interval);
+                    sendFacebookEvent('Purchase', { value: amount, currency: 'BRL', transaction_id: transactionId, content_ids: ['RubzhOGiaWpd'], content_type: 'product' }, false, `purchase-${transactionId}`);
+    
+                    const modalContent = document.querySelector('#donateModal .main-content');
+                    modalContent.innerHTML = `
+                        <div style="text-align:center;padding:3rem 2rem;color:#24CA68;">
+                            <div style="font-size:4rem;margin-bottom:1rem;">✅</div>
+                            <h3>Pagamento Confirmado!</h3>
+                            <p style="margin:1rem 0;">Obrigado pela sua doação de R$ ${formatCurrency(amount)}</p>
+                            <p style="color:#666;font-size:0.9rem;">Sua contribuição ajudará Heloisa e sua família a buscar uma nova possibilidade de tratamento.</p>
+                            <button onclick="closeDonateModal()" style="margin-top:2rem;padding:.75rem 2rem;background:#24CA68;color:#fff;border:none;border-radius:4px;cursor:pointer;">
+                                Fechar
+                            </button>
+                        </div>
+                    `;
+    
+                    updateCounters(amount);
+                    
+                }
+            } catch (e) {
+                console.error('Erro ao verificar pagamento:', e);
+            } finally {
+                checking = false;
+            }
+        }, 4000);
+    }
+    
+    // Função para atualizar contadores na página
+    function updateCounters(amount) {
+        const currentElement = document.getElementById('doado') || document.getElementById('valorMobile');
+        if (currentElement) {
+            const currentText = currentElement.textContent.replace('R$ ', '').replace('.', '').replace(',', '.');
+            const currentValue = parseFloat(currentText) || 0;
+            const newValue = currentValue + amount;
+            document.querySelectorAll('#doado, #valorMobile').forEach(el => {
+                el.textContent = 'R$ ' + formatCurrency(newValue);
+            });
+        }
+    
+        const metaTotal = 200000;
+        const currentRaised = parseFloat(document.getElementById('doado')?.textContent.replace('R$ ', '').replace('.', '').replace(',', '.') || 0);
+        const percentage = (currentRaised / metaTotal * 100).toFixed(2);
+        
+        const progressBars = document.querySelectorAll('.barraParcial');
+        progressBars.forEach(bar => {
+            bar.style.width = percentage + '%';
+        });
+    
+        const percentElements = document.querySelectorAll('#porcentagem, .progresso-mobile .porcentagem span');
+        percentElements.forEach(el => {
+            el.textContent = percentage.replace('.', ',') + '% completo';
+        });
+    
+        const supportersElement = document.getElementById('apoiadores');
+        if (supportersElement) {
+            const currentSupporters = parseInt(supportersElement.textContent.replace(/\./g, ''), 10) || 2148;
+            supportersElement.textContent = (currentSupporters + 1).toLocaleString('pt-BR');
+        }
+    }
+    
+    const metaSentEvents = new Set();
+    function sendFacebookEvent(eventName, parameters = {}, custom = false, eventId = null) {
+        if (typeof fbq !== 'function') return;
+        const key = eventId ? `meta:${eventName}:${eventId}` : null;
+        if (key && metaSentEvents.has(key)) return;
+        try { if (key && sessionStorage.getItem(key)) return; } catch (_) {}
+        try {
+            const args = [custom ? 'trackSingleCustom' : 'trackSingle', '1509232324297951', eventName, parameters];
+            if (eventId) args.push({ eventID: eventId });
+            fbq(...args);
+            if (key) {
+                metaSentEvents.add(key);
+                try { sessionStorage.setItem(key, '1'); } catch (_) {}
+            }
+        } catch (error) { console.warn('Não foi possível registrar o evento Meta.'); }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        sendFacebookEvent('ViewContent', { content_ids: ['RubzhOGiaWpd'], content_type: 'product' });
+        let scrollTracked = false;
+        window.addEventListener('scroll', () => {
+            if (!scrollTracked && window.scrollY > 100) {
+                scrollTracked = true;
+                sendFacebookEvent('CampaignEngagement', { trigger: 'scroll' }, true);
+            }
+        }, { passive: true });
+    });
+    </script>
+
+
+<style>
+    #exitHelpModal { border: 0; border-radius: 20px; padding: 30px; width: min(600px, calc(100% - 28px)); max-height: 90vh; max-height: 90dvh; overflow-y: auto; color: #292929; background: #fff; font-family: inherit; box-shadow: 0 20px 70px #0003; }
+    #exitHelpModal::backdrop { background: rgba(0,0,0,.55); }
+    #exitHelpModal .exit-close { display: block; margin-left: auto; border: 0; background: transparent; color: #6b7280; font-size: 28px; cursor: pointer; line-height: 1; padding: 4px 8px; }
+    #exitHelpModal h2 { color: #24CA68; font-size: 28px; font-weight: 700; margin: 8px 0 14px; }
+    #exitHelpModal p { color: #6b7280; font-size: 16px; line-height: 1.5; margin-bottom: 18px; }
+    #exitHelpModal .exit-choice { display: flex; align-items: center; gap: 18px; width: 100%; padding: 18px 20px; margin: 12px 0; border: 2px solid #e5e7eb; border-radius: 18px; background: #fff; text-align: left; cursor: pointer; font-family: inherit; }
+    #exitHelpModal .exit-choice:hover { border-color: #24CA68; background: #f3fcf6; }
+    #exitHelpModal button:focus-visible, #exitHelpModal a:focus-visible { outline: 3px solid #0a8f51; outline-offset: 3px; }
+    #exitHelpModal .exit-choice strong { display: block; color: #111827; font-size: 26px; font-weight: 800; margin-bottom: 4px; }
+    #exitHelpModal .exit-choice small { display: block; color: #6b7280; font-size: 16px; line-height: 1.4; }
+    #exitHelpModal .exit-arrow { margin-left: auto; color: #24CA68; font-size: 28px; }
+    #exitHelpModal .exit-footer { border-top: 1px solid #eee; padding-top: 16px; margin-top: 22px; text-align: center; color: #6b7280; font-size: 14px; }
+    #exitHelpModal .exit-leave { display: block; margin: 16px auto 0; background: transparent; border: 0; color: #6b7280; text-decoration: underline; font: inherit; font-size: 14px; cursor: pointer; }
+    #exitHelpModal .exit-leave[hidden] { display: none; }
+    @media(max-width: 480px) { #exitHelpModal { padding: 18px; } #exitHelpModal h2 { font-size: 24px; } #exitHelpModal .exit-choice { padding: 14px; } #exitHelpModal .exit-choice small { font-size: 14px; } }
+</style>
+<dialog id="exitHelpModal" aria-labelledby="exitHelpTitle" aria-describedby="exitHelpDescription">
+    <button type="button" class="exit-close" aria-label="Fechar">×</button>
+    <h2 id="exitHelpTitle">Espere! Ainda precisamos da sua ajuda 💚</h2>
+    <p id="exitHelpDescription">Sua contribuição pode ajudar Heloisa e sua família a buscar uma nova possibilidade de tratamento em São Paulo. Cada gesto de carinho faz diferença nessa caminhada.</p>
+    <p><strong>Escolha um valor simbólico para ajudar agora:</strong></p>
+    <button type="button" class="exit-choice" data-amount="30"><span><strong>R$ 30,00</strong><small>Sua doação pode ajudar Heloisa a buscar uma nova possibilidade de tratamento ❤️</small></span><span class="exit-arrow" aria-hidden="true">→</span></button>
+    <button type="button" class="exit-choice" data-amount="50"><span><strong>R$ 50,00</strong><small>Qualquer contribuição pode ajudar essa família neste momento tão difícil</small></span><span class="exit-arrow" aria-hidden="true">→</span></button>
+    <button type="button" class="exit-choice" data-amount="100"><span><strong>R$ 100,00</strong><small>Ajude Heloisa e sua família a chegarem até o tratamento em São Paulo 🙏</small></span><span class="exit-arrow" aria-hidden="true">→</span></button>
+    <div class="exit-footer">💚 Doe com carinho · Pagamento via PIX</div>
+    <button type="button" class="exit-leave" hidden>Continuar para o destino</button>
+</dialog>
+<script>
+(() => {
+    const modal = document.getElementById('exitHelpModal');
+    const leave = modal.querySelector('.exit-leave');
+    let shown = false;
+    let destination = null;
+    let previousOverflow = '';
+    function showExitHelp(link = null, explicitClick = false) {
+        const donation = document.getElementById('donateModal');
+        if ((shown && !explicitClick) || modal.open || (donation && getComputedStyle(donation).display !== 'none')) return false;
+        if (typeof modal.showModal !== 'function') return false;
+        destination = link;
+        leave.hidden = !link;
+        previousOverflow = document.body.style.overflow;
+        modal.showModal();
+        document.body.style.overflow = 'hidden';
+        shown = true;
+        sendFacebookEvent('ExitHelpViewed', {}, true);
+        return true;
+    }
+    modal.addEventListener('close', () => { document.body.style.overflow = previousOverflow; });
+    modal.querySelector('.exit-close').addEventListener('click', () => modal.close());
+    modal.addEventListener('click', event => {
+        const rect = modal.getBoundingClientRect();
+        if (event.target === modal && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) modal.close();
+    });
+    leave.addEventListener('click', () => {
+        const link = destination;
+        modal.close();
+        if (link) link.click();
+    });
+    modal.querySelectorAll('.exit-choice').forEach(button => {
+        button.addEventListener('click', () => {
+            sendFacebookEvent('ExitHelpDonationSelected', { value: Number(button.dataset.amount), currency: 'BRL' }, true);
+            modal.close();
+            openDonateModal();
+            document.querySelector(`#donateModal .preset-value-btn[data-value="${button.dataset.amount}"]`).click();
+            document.getElementById('contribute-button').focus();
+        });
+    });
+    // Explicit header actions can reopen the dialog after it has been dismissed.
+    document.querySelectorAll('header .menu-header .item-menu, header .item-menu-busca, header .item-menu-account, header .btn-create-button, header .busca-mobile, header button.menu-mobile').forEach(control => {
+        if (control.tagName !== 'BUTTON') {
+            control.setAttribute('role', 'button');
+            control.tabIndex = 0;
+            control.addEventListener('keydown', event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    control.click();
+                }
+            });
+        }
+        control.setAttribute('aria-haspopup', 'dialog');
+        control.setAttribute('aria-controls', 'exitHelpModal');
+        control.addEventListener('click', event => {
+            event.preventDefault();
+            showExitHelp(null, true);
+        });
+    });
+    // Browser chrome cannot display a custom dialog on tab close or back navigation.
+    document.addEventListener('mouseout', event => {
+        if (!event.relatedTarget && event.clientY <= 0 && matchMedia('(pointer: fine)').matches) showExitHelp();
+    });
+    document.addEventListener('click', event => {
+        const link = event.target.closest('a[href]');
+        if (!link || event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || link.hasAttribute('download') || link.target === '_blank') return;
+        const url = new URL(link.href, location.href);
+        if (!['http:', 'https:'].includes(url.protocol)) return;
+        if (url.origin === location.origin && url.pathname === location.pathname && url.search === location.search) return;
+        if (showExitHelp(link)) event.preventDefault();
+    });
+})();
+</script>
+
+    </body></html>

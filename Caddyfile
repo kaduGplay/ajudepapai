@@ -1,0 +1,7 @@
+campanhasolidaria.fun {
+    encode zstd gzip
+    reverse_proxy app:3000
+}
+www.campanhasolidaria.fun {
+    redir https://campanhasolidaria.fun{uri} permanent
+}
