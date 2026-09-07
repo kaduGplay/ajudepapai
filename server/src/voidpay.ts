@@ -92,7 +92,7 @@ export async function createPixTransaction(params: CreatePixParams): Promise<Cre
 
 export async function getTransaction(transactionId: string): Promise<TransactionDetails> {
   const url = `${config.voidpay.apiUrl}/gateway/transactions?id=${encodeURIComponent(transactionId)}`;
-  const res = await fetch(url, { method: "GET", headers: authHeaders(), signal: AbortSignal.timeout(15000) });
+  const res = await fetch(url, { method: "GET", headers: authHeaders(), signal: AbortSignal.timeout(8000) });
 
   const data = await res.json().catch(() => null);
 

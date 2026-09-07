@@ -20,11 +20,11 @@ global.fetch = async (url, options) => {
   return { ok: true, json: async () => ({ status: transactionStatus, payedAt: transactionStatus === 'COMPLETED' ? '2026-09-07T16:00:00Z' : null, refundedAt: transactionStatus === 'REFUNDED' ? '2026-09-07T17:00:00Z' : null }) };
 };
 test('pending → paid → refunded, persistent retries, UTC, attribution and deduplication', async () => {
-  const order = newOrder(5000, { name: 'Teste', email: 'teste@example.com', phone: null, document: null, country: 'BR' }, { utm_source: 'FB', src: 'ad', sck: 'click', utm_campaign: 'camp|123' });
+  const order = await newOrder(5000, { name: 'Teste', email: 'teste@example.com', phone: null, document: null, country: 'BR' }, { utm_source: 'FB', src: 'ad', sck: 'click', utm_campaign: 'camp|123' });
   const createdAt = order.createdAt;
-  order.transactionId = 'test-transaction';saveOrder(order);
-  assert.equal(findCallback(order.id, 'bad-token'), undefined);
-  assert.equal(findCallback(order.id, order.callbackToken), order);
+  order.transactionId = 'test-transaction';await saveOrder(order);
+  assert.equal(await findCallback(order.id, 'bad-token'), undefined);
+  assert.deepEqual(await findCallback(order.id, order.callbackToken), order);
   await syncOrder(order, false);
   assert.equal(requests[0].status, 'waiting_payment');
   assert.equal(requests[0].approvedDate, null);
@@ -45,6 +45,6 @@ test('pending → paid → refunded, persistent retries, UTC, attribution and de
   transactionStatus = 'REFUNDED';await syncOrder(order);assert.equal(order.status, 'refunded');
   assert.equal(requests.at(-1).refundedAt, '2026-09-07 17:00:00');
   transactionStatus = 'COMPLETED';await syncOrder(order);assert.equal(order.status, 'refunded');
-  const restarted = spawnSync(process.execPath, ['--input-type=module', '-e', `const {findOrder}=await import('./dist/orders.js');if(findOrder('test-transaction')?.sentStatus!=='refunded')process.exit(1)`], {cwd: process.cwd(), env:process.env, encoding:'utf8'});
+  const restarted = spawnSync(process.execPath, ['--input-type=module', '-e', `const {findOrder}=await import('./dist/orders.js');if((await findOrder('test-transaction'))?.sentStatus!=='refunded')process.exit(1)`], {cwd: process.cwd(), env:process.env, encoding:'utf8'});
   assert.equal(restarted.status, 0, restarted.stderr);
 });

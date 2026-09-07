@@ -2,3 +2,8 @@
 **/dist/
 **/.env
 **/data/
+**/.env.*
+!**/.env.example
+.vercel/
+public/
+.DS_Store
