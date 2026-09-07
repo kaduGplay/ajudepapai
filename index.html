@@ -1734,18 +1734,32 @@ src="https://www.facebook.com/tr?id=1053278630813571&ev=PageView&noscript=1"
 
                     <section class="show-sobre campaign-panel" id="panel-novidades" role="tabpanel" aria-labelledby="tab-novidades" tabindex="0" hidden>
                         <h3>Novidades da campanha</h3>
-                        <p>Ainda não há novas atualizações publicadas.</p>
+                        <p>Este espaço reúne informações sobre a campanha. Novas etapas do tratamento serão publicadas quando houver atualizações confirmadas.</p>
                         <p><strong>O objetivo da campanha</strong></p>
                         <p>Conforme o relato apresentado pela família, a campanha busca recursos para uma nova possibilidade de tratamento de Heloisa em São Paulo.</p>
-                        <p>Você pode conhecer a história completa na aba Sobre. Compartilhar a campanha também é uma forma de apoiar a família.</p>
+                        <div class="campaign-info">
+                            <p><strong>Para que serve a arrecadação?</strong></p>
+                            <p>Segundo a descrição da campanha, a meta de R$ 200 mil busca custear o tratamento particular e as despesas necessárias para o acompanhamento em São Paulo.</p>
+                            <p><strong>Como acompanhar?</strong></p>
+                            <p>Leia o relato da família na aba Sobre e volte a este espaço para conferir novas informações.</p>
+                        </div>
+                        <p>Se puder contribuir, escolha um valor que caiba no seu orçamento. Compartilhar a campanha também ajuda a história de Heloisa a chegar a mais pessoas.</p>
                         <button type="button" class="btn-ajudar" onclick="openDonateModal()">QUERO AJUDAR HELOISA 💖</button>
+                        <p class="campaign-note">Escolha o valor da sua contribuição · Pagamento via PIX</p>
                     </section>
                     <section class="show-sobre campaign-panel" id="panel-apoiadores" role="tabpanel" aria-labelledby="tab-apoiadores" tabindex="0" hidden>
                         <h3>Quem ajudou</h3>
                         <p>Obrigado a todas as pessoas que contribuíram ou compartilharam esta campanha.</p>
                         <p>A lista nominal de doadores não está disponível. O checkout permite contribuir sem informar o nome, e não publicamos dados pessoais de pagamento.</p>
-                        <p>Se você puder, faça parte dessa corrente de solidariedade por Heloisa e sua família. 💚</p>
+                        <div class="campaign-info">
+                            <p><strong>Você pode ajudar de duas formas</strong></p>
+                            <p>Contribua com um valor de sua escolha ou compartilhe o link da campanha com pessoas próximas.</p>
+                            <p><strong>Seu apoio não precisa aparecer em uma lista</strong></p>
+                            <p>A contribuição pode ser feita sem preencher um cadastro na página. Depois de escolher o valor, você recebe o código PIX para pagar no aplicativo do banco.</p>
+                        </div>
+                        <p>Cada gesto de solidariedade pode apoiar Heloisa e sua família nesta busca. 💚</p>
                         <button type="button" class="btn-ajudar" onclick="openDonateModal()">QUERO AJUDAR HELOISA 💖</button>
+                        <p class="campaign-note">Escolha o valor da sua contribuição · Pagamento via PIX</p>
                     </section>
 
                     <div class="plugin-facebook">
@@ -2831,6 +2845,20 @@ src="https://www.facebook.com/tr?id=1053278630813571&ev=PageView&noscript=1"
     [role="tabpanel"][hidden] { display: none !important; }
     .menu-detalhes [role="tab"] { cursor: pointer; }
     .menu-detalhes [role="tab"]:focus-visible { outline: 2px solid #0a8f51; outline-offset: 3px; }
+    .campaign-panel .btn-ajudar {
+        display: flex; align-items: center; justify-content: center;
+        width: 100%; min-height: 54px; padding: 16px 20px;
+        border: 0; border-radius: 10px; background: #24CA68;
+        color: #fff; font-family: inherit; font-size: 16px;
+        font-weight: 700; line-height: 1.4; white-space: normal;
+        cursor: pointer; box-shadow: 0 4px 12px rgba(10,143,81,.18);
+        transition: background-color .15s ease;
+    }
+    .campaign-panel .btn-ajudar:hover { background: #0a8f51; }
+    .campaign-panel .btn-ajudar:focus-visible { outline: 3px solid #075e37; outline-offset: 3px; }
+    .campaign-panel .campaign-note { margin: 10px 0 0; text-align: center; font-size: 13px; color: #666; }
+    .campaign-panel .campaign-info { padding: 18px; margin: 16px 0; background: #f3fcf6; border: 1px solid #d6efdf; border-radius: 12px; }
+    .campaign-panel .campaign-info p:last-child { margin-bottom: 0; }
     .campaign-panel h3 { font-size: 22px; margin-bottom: 18px; color: #292929; }
 </style>
 <script>
