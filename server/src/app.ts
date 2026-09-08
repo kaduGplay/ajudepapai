@@ -65,7 +65,7 @@ app.post("/api/gerar-pix", async (req, res) => {
   const amountEmReais = amountEmCentavos / 100;
 
   const nome = 'Doador anônimo';
-  const email = 'doacao@campanhasolidaria.fun';
+  const email = 'doador@example.com';
 
   try {
     const fixedCallback = callbackUrl();
