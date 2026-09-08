@@ -72,7 +72,7 @@ A geração de cobrança não é repetida automaticamente se o gateway responder
 
 ## Rastreamento
 
-Pixel Utmify: `6a8a10f4e08f7866db223c66`. Pixel Meta: `2155096788751623`.
+Pixel Utmify: `6a8a10f4e08f7866db223c66`. Pixel Meta: `1544244830330153`.
 
 UTMs, `src` e `sck` são armazenados com o pedido. Datas seguem UTC e `createdAt` não muda. Valores são enviados em centavos. Enquanto as unidades da taxa do gateway não forem confirmadas, a comissão informada é o valor integral, opção permitida pela Utmify; não representa receita líquida.
 
